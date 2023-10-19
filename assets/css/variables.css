@@ -1,0 +1,59 @@
+:root {
+  /* Base Colors(RGB) */
+  --color-black: rgb(5, 5, 5);
+  --color-white: rgb(255, 255, 255);
+  --color-gray-900: rgb(6, 6, 6);
+  --color-gray-800: rgb(36, 36, 36);
+  --color-gray-700: rgb(69, 69, 69);
+  --color-gray-600: rgb(97, 97, 97);
+  --color-gray-500: rgb(128, 128, 128);
+  --color-gray-400: rgb(156, 156, 156);
+  --color-gray-300: rgb(184, 184, 184);
+  --color-gray-200: rgb(218, 218, 218);
+  --color-gray-100: rgb(240, 240, 240);
+  --color-gray-50: rgb(252, 252, 252);
+
+  /* Font */
+  --font-size-base: 1rem;
+  --font-family: system-ui, Helvetica, Arial, "Noto Sans TC", sans-serif;
+
+  /* Breakpint */
+  --breakpoint-375: 375px;
+  --breakpoint-560: 560px;
+  --breakpoint-768: 768px;
+  --breakpoint-960: 960px;
+  --breakpoint-1024: 1024px;
+  --breakpoint-1280: 1280px;
+  --breakpoint-1440: 1440px;
+  --breakpoint-1600: 1600px;
+  --breakpoint-1920: 1920px;
+
+  /* Theme Colors(RGB) */
+  /* --color-primary: rgb(122, 85, 255); */
+
+  /* Outline */
+  --outline-color: rgb(254, 186, 8);
+
+  /* link */
+  --link-color: var(--color-primary);
+
+  /* noscript */
+  --noscript-bg: var(--color-white);
+}
+
+/*************************
+  ColorMode
+*************************/
+.dark-mode {
+  --color-text: #ebf4f1;
+  --color-primary: #7926d8;
+  --bg: #121212;
+  --border-color: var(--color-gray-700);
+}
+
+.light-mode {
+  --color-text: #1a1a1a;
+  --color-primary: #bf95ef;
+  --bg: #ffffff;
+  --border-color: var(--color-gray-200);
+}
