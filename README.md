@@ -2,9 +2,6 @@
 # Demo
 https://f2e-mission1-rb0aydhvw-eleanorewus-projects.vercel.app/
 
-##  Node Version
-請先安裝Node 18.0.0版本
-
 ##  Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
