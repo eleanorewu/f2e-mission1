@@ -1,7 +1,7 @@
 <template>
   <masonry-wall
     :items="items"
-    :ssr-columns="1"
+    :ssr-columns="0"
     :column-width="widths"
     :gap="16"
     :max-columns="4"
@@ -24,6 +24,9 @@
 
 <script setup>
 import { ref } from "vue";
+definePageMeta({
+  layout: "default",
+});
 const items = ref([
   {
     title: "First",
@@ -69,15 +72,27 @@ const items = ref([
   },
 ]);
 const widths = ref([300, 300, 400, 300, 300, 600]);
+const colorMode = useColorMode();
+console.log("colorMode:", colorMode);
 </script>
 
-<style>
+<style scoped>
 .masonry-wall {
   margin: 1rem;
   margin-bottom: 6rem;
 }
+.block-container:hover {
+  background-color: rgba(255, 42, 255, 0.6);
+  transition: 0.2s;
+  & h1,
+  span {
+    color: rgb(246, 255, 71);
+    transition: 0.2s;
+  }
+}
 .block-container {
   position: relative;
+  border-radius: 0.5rem;
 }
 img {
   top: 0;
@@ -89,11 +104,15 @@ img {
   z-index: 0;
   border-radius: 0.5rem;
 }
+img:hover {
+  transition: 0.2s;
+  opacity: 0.5;
+}
 
 h1 {
   position: relative;
   z-index: 1;
-  color: violet;
+  color: #ee82ee;
 }
 span {
   position: relative;

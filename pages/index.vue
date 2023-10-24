@@ -25,8 +25,8 @@
           title="另開新視窗 前往line貼圖"
           target="_blank"
           external
-          >line貼圖</NuxtLink
-        >
+          >line貼圖
+        </NuxtLink>
       </li>
     </ul>
     <Card />
