@@ -72,8 +72,6 @@ const items = ref([
   },
 ]);
 const widths = ref([300, 300, 400, 300, 300, 600]);
-const colorMode = useColorMode();
-console.log("colorMode:", colorMode);
 </script>
 
 <style scoped>
