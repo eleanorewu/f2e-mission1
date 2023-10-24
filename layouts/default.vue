@@ -1,14 +1,14 @@
 <template>
-  <html>
-    <body class="wrapper">
+  <Html>
+    <Body class="wrapper">
       <div class="layout">
         <Header />
         <slot />
         <Footer />
         <buttonToTop />
       </div>
-    </body>
-  </html>
+    </Body>
+  </Html>
 </template>
 
 <script setup></script>

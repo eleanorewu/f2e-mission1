@@ -1,9 +1,11 @@
 <template>
   <div>
-    <button>
-      <font-awesome-icon icon="fa-solid fa-circle-half-stroke" />主題模式
-      {{ $colorMode.value }}
-    </button>
+    <ClientOnly>
+      <button>
+        <font-awesome-icon icon="fa-solid fa-circle-half-stroke" />主題模式
+        {{ colorMode.value }}
+      </button>
+    </ClientOnly>
     <div class="msg-box">
       <img
         class="avatar"
@@ -12,7 +14,7 @@
       />
       <p class="msg" :key="msgContent">{{ msgContent }}</p>
     </div>
-    <select v-model="$colorMode.preference">
+    <select v-model="colorMode.preference">
       <option value="system">System</option>
       <option value="light">Light</option>
       <option value="dark">Dark</option>
