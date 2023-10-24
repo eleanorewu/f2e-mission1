@@ -17,14 +17,29 @@
 import SvgIconDark from "@/components/SvgIcon/Dark.vue";
 import SvgIconLight from "@/components/SvgIcon/Light.vue";
 const colorMode = useColorMode();
-console.log(colorMode);
-const swtichMode = (mode) => {
-  if (mode === "dark") {
-    colorMode.preference = "light";
-  } else {
-    colorMode.preference = "dark";
-  }
+const darkMode = () => {
+  colorMode.preference = "dark";
+  document.getElementById("colormode-switch").checked = true;
 };
+const lightMode = () => {
+  colorMode.preference = "light";
+  document.getElementById("colormode-switch").checked = false;
+};
+const swtichMode = (mode) => {
+  if (mode === "dark") return lightMode();
+  else darkMode();
+};
+onMounted(() => {
+  console.log("on mounted", colorMode);
+  switch (colorMode.preference) {
+    case "dark":
+      darkMode();
+      break;
+    case "light":
+      lightMode();
+      break;
+  }
+});
 </script>
 
 <style scoped>
