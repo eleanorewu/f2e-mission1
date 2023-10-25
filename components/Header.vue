@@ -4,7 +4,7 @@
     <input
       type="checkbox"
       id="colormode-switch"
-      @click="swtichMode(colorMode.preference)"
+      @click="swtichMode('switch')"
     />
     <label for="colormode-switch" class="color-mode-switch">
       <SvgIconDark class="icon-dark"></SvgIconDark>
@@ -25,20 +25,35 @@ const lightMode = () => {
   colorMode.preference = "light";
   document.getElementById("colormode-switch").checked = false;
 };
+console.log("setup", colorMode);
 const swtichMode = (mode) => {
-  if (mode === "dark") return lightMode();
-  else darkMode();
-};
-onMounted(() => {
-  console.log("on mounted", colorMode);
-  switch (colorMode.preference) {
-    case "dark":
-      darkMode();
+  let preference = colorMode.preference;
+  let value = colorMode.value;
+
+  switch (mode) {
+    case undefined:
+      if (preference === "system" && value === "light") {
+        lightMode();
+      } else if (preference === "system" && value === "dark") {
+        darkMode();
+      } else if (preference === "dark" && value === "dark") {
+        darkMode();
+      } else {
+        lightMode();
+      }
       break;
-    case "light":
-      lightMode();
+    case "switch":
+      console.log("switch");
+      if (preference === "dark" && value === "dark") {
+        lightMode();
+      } else {
+        darkMode();
+      }
       break;
   }
+};
+onMounted(() => {
+  swtichMode();
 });
 </script>
 
@@ -65,7 +80,7 @@ label {
   cursor: pointer;
   width: 70px;
   height: 35px;
-  background: #adadad;
+  background: #aeaeae;
   display: block;
   border-radius: 6.25rem;
   position: relative;
@@ -105,7 +120,7 @@ label:after {
 }
 
 input:checked + label {
-  background: #000;
+  background: #3a3a3a;
 }
 input:checked + label:after {
   left: calc(100% - 5px);

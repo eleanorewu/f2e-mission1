@@ -41,7 +41,7 @@
 <script setup>
 import { ref } from "vue";
 const colorMode = useColorMode();
-console.log(colorMode.preference);
+console.log(colorMode);
 
 const msgContent = ref("2024");
 setTimeout(() => {

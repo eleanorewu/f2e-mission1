@@ -24,9 +24,6 @@
 
 <script setup>
 import { ref } from "vue";
-definePageMeta({
-  layout: "default",
-});
 const items = ref([
   {
     title: "First",
