@@ -45,6 +45,7 @@
   background-color: var(--bg);
   color: var(--color-text);
   border-bottom: 1px solid var(--border-color);
+  z-index: 2;
 }
 
 .navagationbar {
