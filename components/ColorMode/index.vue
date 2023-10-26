@@ -24,7 +24,6 @@ const lightMode = () => {
   colorMode.preference = "light";
   document.getElementById("colormode-switch").checked = false;
 };
-console.log("setup", colorMode);
 const swtichMode = (mode) => {
   let preference = colorMode.preference;
   let value = colorMode.value;
@@ -42,7 +41,6 @@ const swtichMode = (mode) => {
       }
       break;
     case "switch":
-      console.log("switch");
       if (preference === "dark" && value === "dark") {
         lightMode();
       } else {
