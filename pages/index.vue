@@ -35,6 +35,7 @@
     <Card />
     <Card />
     <Card />
+    <IntroduceBox />
   </div>
 </template>
 
