@@ -14,8 +14,12 @@
         <li>喵電感應</li>
       </ul>
       <ul class="action-menu">
-        <li><button class="no-border">中文</button></li>
-        <li><button class="no-border">喵語</button></li>
+        <li>
+          <select class="no-border">
+            <option value="Zh">中文</option>
+            <option value="Meow">喵語</option>
+          </select>
+        </li>
         <li><ColorMode /></li>
       </ul>
     </div>
@@ -59,6 +63,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    font-size: 1.125rem;
     transform: translateX(-50%) translateY(-50%);
     @media screen and (width <= 1080px) {
       display: none;
@@ -75,8 +80,8 @@
     align-items: center;
     & li {
       padding: 0;
+      margin-left: 0.5rem;
       & .no-border {
-        padding: 0.125rem 0;
         border: none;
       }
     }
@@ -86,6 +91,7 @@
   width: 100%;
   padding: 0.25rem 0;
   display: none;
+  font-size: 1.125rem;
   @media screen and (width <= 1080px) {
     display: flex;
     flex-wrap: nowrap;

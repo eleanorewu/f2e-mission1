@@ -5,7 +5,7 @@
         <Header />
         <slot />
         <Footer />
-        <buttonToTop />
+        <ButtonToTop />
       </div>
     </body>
   </html>
