@@ -1,5 +1,32 @@
 <template>
-  <div class="header">Header</div>
+  <div class="header">
+    <div class="navagationbar">
+      <img
+        class="logo"
+        src="https://d2h0caecvn34a3.cloudfront.net/prod/2021/06/HeroMAMA-logo_工作區域-1.png"
+        alt="這是logo"
+      />
+      <ul class="main-menu">
+        <li>認識喵星人</li>
+        <li>喵的未來</li>
+        <li>喵的足跡</li>
+        <li>支持本喵</li>
+        <li>喵電感應</li>
+      </ul>
+      <ul class="action-menu">
+        <li><button class="no-border">中文</button></li>
+        <li><button class="no-border">喵語</button></li>
+        <li><ColorMode /></li>
+      </ul>
+    </div>
+    <ul class="mobile-menu">
+      <li>認識喵星人</li>
+      <li>喵的未來</li>
+      <li>喵的足跡</li>
+      <li>支持本喵</li>
+      <li>喵電感應</li>
+    </ul>
+  </div>
 </template>
 
 <script setup></script>
@@ -7,12 +34,74 @@
 <style scoped>
 .header {
   width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  position: fixed;
+  top: 0;
+  padding: 0.25rem 1rem;
   background-color: var(--bg);
   color: var(--color-text);
   border-bottom: 1px solid var(--border-color);
+}
+
+.navagationbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  & .logo {
+    width: 120px;
+    height: 52px;
+    object-fit: contain;
+  }
+  & .main-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    @media screen and (width <= 1080px) {
+      display: none;
+    }
+    & li {
+      padding: 0.25rem;
+      display: inline;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+  }
+  & .action-menu {
+    display: flex;
+    align-items: center;
+    & li {
+      padding: 0;
+      & .no-border {
+        padding: 0.125rem 0;
+        border: none;
+      }
+    }
+  }
+}
+.mobile-menu {
+  width: 100%;
+  padding: 0.25rem 0;
+  display: none;
+  @media screen and (width <= 1080px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  @media screen and (width <= 480px) {
+    justify-content: start;
+  }
+  & li {
+    white-space: nowrap;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
 }
 </style>
