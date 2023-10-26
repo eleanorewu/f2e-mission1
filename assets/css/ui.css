@@ -21,12 +21,23 @@ body {
 }
 
 .wrapper {
+  width: 100%;
   overflow-x: hidden;
   background-color: var(--bg);
   color: var(--color-text);
   text-align: center;
 }
 
+.layout {
+  margin: 0 auto;
+}
+
+.page {
+  padding-top: 5rem;
+  @media screen and (width <= 1080px) {
+    padding-top: 6.5rem;
+  }
+}
 h1,
 h2,
 h3,
@@ -95,7 +106,7 @@ a {
 
 button {
   padding: 0.35rem 0.5rem;
-  border: 1px solid gray;
+  border: 1px solid var(--border-color);
   color: var(--color-text);
   background-color: var(--bg);
   border-radius: 0.35rem;
@@ -108,4 +119,11 @@ button {
     font-size: 1rem;
     margin-right: 0.25rem;
   }
+}
+
+select {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--border-color);
+  color: var(--color-text);
+  border-radius: 0.35rem;
 }

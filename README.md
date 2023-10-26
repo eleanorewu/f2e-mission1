@@ -1,6 +1,6 @@
+# Node Version
 
-# Demo
-https://f2e-mission1-rb0aydhvw-eleanorewus-projects.vercel.app/
+18.18.2
 
 ##  Nuxt 3 Minimal Starter
 
