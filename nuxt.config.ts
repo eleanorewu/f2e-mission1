@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   "imports": {
     "dirs": ['stores']
   },
+  plugins:["~/plugins/i18n.js"],
   "modules": ['@pinia/nuxt', '@nuxtjs/color-mode'],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference

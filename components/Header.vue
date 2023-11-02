@@ -6,18 +6,19 @@
         src="https://d2h0caecvn34a3.cloudfront.net/prod/2021/06/HeroMAMA-logo_工作區域-1.png"
         alt="這是logo"
       />
-      <ul class="main-menu">
-        <li>認識喵星人</li>
+      <ul class="main-menu" v-for="(title, index) in $t('nav')">
+        <li>{{ title }}</li>
+        <!-- <li>認識喵星人</li>
         <li>喵的未來</li>
         <li>喵的足跡</li>
         <li>支持本喵</li>
-        <li>喵電感應</li>
+        <li>喵電感應</li> -->
       </ul>
       <ul class="action-menu">
         <li>
-          <select class="no-border">
-            <option value="Zh">中文</option>
-            <option value="Meow">喵語</option>
+          <select class="no-border" v-model="$i18n.locale">
+            <option value="zhTW">中文</option>
+            <option value="meow">喵語</option>
           </select>
         </li>
         <li><ColorMode /></li>
