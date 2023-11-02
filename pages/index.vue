@@ -15,6 +15,8 @@
       external
       >line貼圖</NuxtLink
     > -->
+    <h2>喵喵的最新軌跡</h2>
+    <Timeline />
   </div>
 </template>
 
