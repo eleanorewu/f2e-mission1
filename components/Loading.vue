@@ -6,8 +6,8 @@
       alt=""
     />
     <div class="msg-box">
-      <span class="msg" :key="msgContent">{{ msgContent }}</span>
-      <span>選一隻會做事的貓咪...</span>
+      <span class="msg">{{ $t("title") }}</span>
+      <span>{{ $t("sub-title") }}</span>
     </div>
   </div>
 </template>
