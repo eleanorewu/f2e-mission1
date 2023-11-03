@@ -6,13 +6,12 @@
         src="https://d2h0caecvn34a3.cloudfront.net/prod/2021/06/HeroMAMA-logo_工作區域-1.png"
         alt="這是logo"
       />
-      <ul class="main-menu" v-for="(title, index) in $t('nav')">
-        <li>{{ title }}</li>
-        <!-- <li>認識喵星人</li>
-        <li>喵的未來</li>
-        <li>喵的足跡</li>
-        <li>支持本喵</li>
-        <li>喵電感應</li> -->
+      <ul class="main-menu">
+        <li>{{ $t("nav[0]") }}</li>
+        <li>{{ $t("nav[1]") }}</li>
+        <li>{{ $t("nav[2]") }}</li>
+        <li>{{ $t("nav[3]") }}</li>
+        <li>{{ $t("nav[4]") }}</li>
       </ul>
       <ul class="action-menu">
         <li>
@@ -25,11 +24,11 @@
       </ul>
     </div>
     <ul class="mobile-menu">
-      <li>認識喵星人</li>
-      <li>喵的未來</li>
-      <li>喵的足跡</li>
-      <li>支持本喵</li>
-      <li>喵電感應</li>
+      <li>{{ $t("nav[0]") }}</li>
+      <li>{{ $t("nav[1]") }}</li>
+      <li>{{ $t("nav[2]") }}</li>
+      <li>{{ $t("nav[3]") }}</li>
+      <li>{{ $t("nav[4]") }}</li>
     </ul>
   </div>
 </template>
