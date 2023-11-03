@@ -8,6 +8,7 @@
     </select>
     <Card />
     <IntroduceBox />
+    <ContactForm />
     <!-- <NuxtLink
       to="https://store.line.me/stickershop/product/24123123/zh-Hant"
       title="另開新視窗 前往line貼圖"
