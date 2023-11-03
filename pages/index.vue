@@ -8,7 +8,6 @@
     </select>
     <Card />
     <IntroduceBox />
-    <ContactForm />
     <!-- <NuxtLink
       to="https://store.line.me/stickershop/product/24123123/zh-Hant"
       title="另開新視窗 前往line貼圖"
@@ -18,6 +17,7 @@
     > -->
     <h2>喵喵的最新軌跡</h2>
     <Timeline />
+    <ContactForm />
   </div>
 </template>
 
