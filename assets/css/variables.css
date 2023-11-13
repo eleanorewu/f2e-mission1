@@ -56,6 +56,8 @@
   --copyright-text: var(--color-primary-main);
   --landing-bg: var(--color-primary-lighter);
   --main-bg: var(--color-primary-light);
+  --filter-bg: var(--color-white);
+  --filter-item-bg: var(--color-primary-main);
   --footer-bg: var(--color-primary-main);
   --copyright-bg: var(--color-black);
   --border-color: var(--color-gray-200);
@@ -69,6 +71,8 @@
   --copyright-text: var(--color-white);
   --landing-bg: var(--color-black);
   --main-bg: var(--color-gray-700);
+  --filter-bg: var(--color-primary-main);
+  --filter-item-bg: var(--color-white);
   --footer-bg: var(--color-black);
   --copyright-bg: var(--color-gray-700);
   --border-color: var(--color-gray-700);

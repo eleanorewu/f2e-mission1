@@ -2,6 +2,7 @@
   <div class="page">
     <Loading />
     <Card />
+    <Introduce />
     <IntroduceBox />
     <h2>喵喵的最新軌跡</h2>
     <Timeline />
