@@ -32,7 +32,7 @@ setTimeout(() => {
   width: 100%;
   height: 100vh;
   display: flex;
-  background: var(--bg);
+  background: var(--main-bg);
   justify-content: center;
   padding-top: 300px;
   z-index: 100;
@@ -64,8 +64,8 @@ setTimeout(() => {
       font-size: 1.75rem;
       padding: 0.75rem 1.5rem;
       color: var(--color-text);
-      background-color: var(--bg);
-      border: 1px solid var(--border-color);
+      background-color: var(--loading-msg-bg);
+      border: 1px solid var(--color-text);
       border-radius: 0.125rem 2rem 2rem;
       margin-bottom: 0.25rem;
       @media screen and (width <= 480px) {
@@ -92,4 +92,3 @@ setTimeout(() => {
   }
 }
 </style>
-

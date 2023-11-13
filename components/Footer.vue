@@ -13,7 +13,7 @@
   align-items: center;
   position: fixed;
   bottom: 0;
-  background-color: var(--bg);
+  background-color: var(--main-bg);
   color: var(--color-text);
   border-top: 1px solid var(--border-color);
 }

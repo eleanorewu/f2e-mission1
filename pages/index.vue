@@ -7,13 +7,6 @@
       <option value="dark">Dark</option>
     </select>
     <Card />
-    <!-- <NuxtLink
-      to="https://store.line.me/stickershop/product/24123123/zh-Hant"
-      title="另開新視窗 前往line貼圖"
-      target="_blank"
-      external
-      >line貼圖</NuxtLink
-    > -->
   </div>
 </template>
 
