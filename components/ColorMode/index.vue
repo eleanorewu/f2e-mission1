@@ -1,10 +1,6 @@
 <template>
   <div class="color-mode">
-    <input
-      type="checkbox"
-      id="colormode-switch"
-      @click="swtichMode('switch')"
-    />
+    <input type="checkbox" id="colormode-switch" @click="swtichMode" />
     <label for="colormode-switch" class="color-mode-switch">
       <LightIcon class="icon-light" />
       <DarkIcon class="icon-dark" />
@@ -24,35 +20,27 @@ const lightMode = () => {
   colorMode.preference = "light";
   document.getElementById("colormode-switch").checked = false;
 };
-console.log("setup", colorMode);
-const swtichMode = (mode) => {
+
+const dateCompare = (time) => {
+  let timestamp = 20;
+  if (time <= 1 || time <= 8 || time >= timestamp) {
+    return darkMode();
+  }
+  lightMode();
+};
+
+const swtichMode = () => {
   let preference = colorMode.preference;
   let value = colorMode.value;
-
-  switch (mode) {
-    case undefined:
-      if (preference === "system" && value === "light") {
-        lightMode();
-      } else if (preference === "system" && value === "dark") {
-        darkMode();
-      } else if (preference === "dark" && value === "dark") {
-        darkMode();
-      } else {
-        lightMode();
-      }
-      break;
-    case "switch":
-      console.log("switch");
-      if (preference === "dark" && value === "dark") {
-        lightMode();
-      } else {
-        darkMode();
-      }
-      break;
+  if (preference === "dark" && value === "dark") {
+    lightMode();
+  } else {
+    darkMode();
   }
 };
 onMounted(() => {
-  swtichMode();
+  let localTime = new Date().getHours();
+  dateCompare(localTime);
 });
 </script>
 

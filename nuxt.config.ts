@@ -14,11 +14,14 @@ export default defineNuxtConfig({
           { "property": "og:url", "content": "http://localhost:3000/" },
           { "property": "og:description", "content": "這是 救世貓貓的競選網站" },
       ]
-    }
-  }, 
+    },
+    baseURL: '/f2e-mission1/',
+    buildAssetsDir: 'assets',
+  },
   "imports": {
     "dirs": ['stores']
   },
+  plugins:["~/plugins/i18n.js"],
   "modules": ['@pinia/nuxt', '@nuxtjs/color-mode'],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference

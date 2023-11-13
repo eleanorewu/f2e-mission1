@@ -63,28 +63,28 @@
       </NuxtLink>
       <div></div>
       <ul class="main-menu">
-        <li>認識喵星人</li>
-        <li>喵的未來</li>
-        <li>喵的足跡</li>
-        <li>支持本喵</li>
-        <li>喵電感應</li>
+        <li>{{ $t("nav[0]") }}</li>
+        <li>{{ $t("nav[1]") }}</li>
+        <li>{{ $t("nav[2]") }}</li>
+        <li>{{ $t("nav[3]") }}</li>
+        <li>{{ $t("nav[4]") }}</li>
       </ul>
       <ul class="action-menu">
         <li>
-          <select class="no-border">
-            <option value="Zh">中文</option>
-            <option value="Meow">喵語</option>
+          <select class="no-border" v-model="$i18n.locale">
+            <option value="zhTW">中文</option>
+            <option value="meow">喵語</option>
           </select>
         </li>
         <li><ColorMode /></li>
       </ul>
     </div>
     <ul class="mobile-menu">
-      <li>認識喵星人</li>
-      <li>喵的未來</li>
-      <li>喵的足跡</li>
-      <li>支持本喵</li>
-      <li>喵電感應</li>
+      <li>{{ $t("nav[0]") }}</li>
+      <li>{{ $t("nav[1]") }}</li>
+      <li>{{ $t("nav[2]") }}</li>
+      <li>{{ $t("nav[3]") }}</li>
+      <li>{{ $t("nav[4]") }}</li>
     </ul>
   </div>
 </template>
@@ -101,6 +101,7 @@
   background-color: var(--main-bg);
   color: var(--color-text);
   border-bottom: 1px solid var(--border-color);
+  z-index: 2;
 }
 
 .navagationbar {
