@@ -79,9 +79,10 @@ h6 {
 }
 
 a {
-  color: purple;
+  color: var(--color-text);
   transition: opacity 160ms ease-in;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
   text-decoration-skip-ink: auto;
   &:hover {
     opacity: 0.6;

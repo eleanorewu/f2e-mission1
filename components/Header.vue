@@ -100,7 +100,6 @@
   padding: 0.25rem 1rem;
   background-color: var(--main-bg);
   color: var(--color-text);
-  border-bottom: 1px solid var(--border-color);
   z-index: 2;
 }
 
@@ -163,7 +162,7 @@
     }
   }
   @media screen and (width <= 480px) {
-    justify-content: start;
+    justify-content: flex-start;
   }
   & li {
     white-space: nowrap;

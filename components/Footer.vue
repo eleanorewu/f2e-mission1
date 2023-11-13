@@ -1,5 +1,50 @@
 <template>
-  <div class="footer">Footer</div>
+  <div class="footer">
+    <div class="footer-container">
+      <ul class="footer-info">
+        <li>競選總部：喵星路9487巷87號空紙箱</li>
+        <li>服務電話：02-2222222</li>
+        <li>
+          E-mail信箱：<a
+            href="mailto: meowmeow@catparty.com?subject=我有話跟喵喵說"
+            >meowmeow@catparty.com</a
+          >
+        </li>
+      </ul>
+      <div class="social-media">
+        <ul>
+          <li>
+            <NuxtLink
+              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
+              title="另開新視窗 前往喵立翰的instagram"
+              target="_blank"
+              external
+              >instagram</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
+              title="另開新視窗 前往喵立翰的facebook"
+              target="_blank"
+              external
+              >facebook</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
+              title="另開新視窗 前往喵立翰的youtube"
+              target="_blank"
+              external
+              >youtube</NuxtLink
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">©2023 喵立翰｜2024不分區立委競選官方網站</div>
+  </div>
 </template>
 
 <script setup></script>
@@ -7,15 +52,47 @@
 <style scoped>
 .footer {
   width: 100%;
-  height: 80px;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  background-color: var(--main-bg);
-  color: var(--color-text);
-  border-top: 1px solid var(--border-color);
+  background-color: var(--footer-bg);
   z-index: 2;
+  line-height: 120%;
+  letter-spacing: 1.6px;
+  & .footer-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--color-text);
+    text-align: left;
+    @media screen and (width <= 760px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    & .footer-info {
+      & li:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+    & .social-media {
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+  & .copyright {
+    width: 100%;
+    display: block;
+    padding: 0.625rem;
+    background-color: var(--copyright-bg);
+    color: var(--copyright-text);
+  }
 }
 </style>

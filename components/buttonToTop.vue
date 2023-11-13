@@ -39,8 +39,8 @@ export default defineComponent({
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  background-color: var(--color-primary-main);
-  color: var(--color-black);
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
   border: 1px solid var(--color-primary);
   box-shadow: 0 0.25rem 0.5rem rgba(130, 130, 130, 0.15);
   border-radius: 3rem;
