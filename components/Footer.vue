@@ -11,37 +11,35 @@
           >
         </li>
       </ul>
-      <div class="social-media">
-        <ul>
-          <li>
-            <NuxtLink
-              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
-              title="另開新視窗 前往喵立翰的instagram"
-              target="_blank"
-              external
-              >instagram</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
-              title="另開新視窗 前往喵立翰的facebook"
-              target="_blank"
-              external
-              >facebook</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
-              title="另開新視窗 前往喵立翰的youtube"
-              target="_blank"
-              external
-              >youtube</NuxtLink
-            >
-          </li>
-        </ul>
-      </div>
+      <ul class="social-media">
+        <li>
+          <NuxtLink
+            to="https://store.line.me/stickershop/product/24123123/zh-Hant"
+            title="另開新視窗 前往喵立翰的instagram"
+            target="_blank"
+            external
+            ><font-awesome-icon :icon="['fab', 'instagram']"
+          /></NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="https://www.facebook.com/CatMemeJustTest?locale=zh_TW"
+            title="另開新視窗 前往貓咪迷因facebook粉絲專頁"
+            target="_blank"
+            external
+            ><font-awesome-icon :icon="['fab', 'facebook']"
+          /></NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="https://youtu.be/5LrG333wKy8?si=-3EnE2ClVnCZDEH2"
+            title="另開新視窗 前往youtube觀看搞笑貓咪"
+            target="_blank"
+            external
+            ><font-awesome-icon :icon="['fab', 'youtube']"
+          /></NuxtLink>
+        </li>
+      </ul>
     </div>
     <div class="copyright">©2023 喵立翰｜2024不分區立委競選官方網站</div>
   </div>
@@ -81,9 +79,11 @@
       }
     }
     & .social-media {
-      svg {
-        width: 1rem;
-        height: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      justify-content: flex-start;
+      & svg {
+        font-size: 1.5rem;
       }
     }
   }
