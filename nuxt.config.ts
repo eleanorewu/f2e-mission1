@@ -7,12 +7,15 @@ export default defineNuxtConfig({
   "app": {
     "head": {
       "viewport": "width=500, initial-scale=1",
-      "title": "2024救世貓貓",
+      "title": "喵立翰｜競選官網",
       "meta": [
-          { "name": "description", "content": "這是 救世貓貓的競選網站" },
-          { "property": "og:title", "content": "2024救世貓貓" },
+          { "name": "description", "content": "這是 喵立翰｜2024不分區立委競選官方網站" },
+          { "property": "og:title", "content": "喵立翰｜2024不分區立委競選官方網站" },
           { "property": "og:url", "content": "http://localhost:3000/" },
-          { "property": "og:description", "content": "這是 救世貓貓的競選網站" },
+          { "property": "og:description", "content": "這是 喵立翰｜2024不分區立委競選官方網站" },
+      ],
+      link: [
+        { rel: "icon", type: "image/png", href: "/favicon.ico" }
       ]
     },
     baseURL: '/f2e-mission1/',
