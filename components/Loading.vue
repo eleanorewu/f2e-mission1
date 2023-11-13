@@ -1,24 +1,42 @@
-<template>
-  <div class="loading-indicator">
-    <img
-      class="avatar"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlE7FjHztLrji72AKd5EvLnj21j8YdicZOFhzJQhadw&s"
-      alt=""
-    />
-    <div class="msg-box">
-      <span class="msg">{{ $t("title") }}</span>
-      <span>{{ $t("sub-title") }}</span>
+<template lang="html">
+  <div class="loading-page" v-if="showLoading">
+    <div class="loading-indicator">
+      <img
+        class="avatar"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlE7FjHztLrji72AKd5EvLnj21j8YdicZOFhzJQhadw&s"
+        alt=""
+      />
+      <div class="msg-box">
+        <span class="msg" :key="msgContent">{{ msgContent }}</span>
+        <span>選一隻會做事的貓咪...</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-
 const msgContent = ref("不投我的都是狗");
+const showLoading = ref(true);
+
+setTimeout(() => {
+  showLoading.value = false;
+}, 2000);
 </script>
 
 <style scoped>
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: var(--main-bg);
+  justify-content: center;
+  padding-top: 300px;
+  z-index: 100;
+}
 .loading-indicator {
   display: flex;
   justify-content: center;
@@ -33,22 +51,32 @@ const msgContent = ref("不投我的都是狗");
     border-radius: 4.5rem;
     overflow: hidden;
     border: 1px solid var(--border-color);
+    @media screen and (width <= 480px) {
+      width: 3rem;
+      height: 3rem;
+    }
   }
   & .msg-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     & .msg {
-      font-size: 1.875rem;
+      font-size: 1.75rem;
       padding: 0.75rem 1.5rem;
       color: var(--color-text);
-      background-color: var(--bg);
-      border: 1px solid var(--border-color);
+      background-color: var(--loading-msg-bg);
+      border: 1px solid var(--color-text);
       border-radius: 0.125rem 2rem 2rem;
       margin-bottom: 0.25rem;
+      @media screen and (width <= 480px) {
+        font-size: 1.25rem;
+      }
     }
     & span {
       padding: 0 1rem;
+      @media screen and (width <= 480px) {
+        font-size: 0.875rem;
+      }
     }
   }
 }
@@ -56,7 +84,7 @@ const msgContent = ref("不投我的都是狗");
 @keyframes openin {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;

@@ -1,10 +1,10 @@
 :root {
   /* Base Colors(RGB) */
-  --color-black: rgb(5, 5, 5);
+  --color-black: rgb(35, 35, 35);
   --color-white: rgb(255, 255, 255);
   --color-gray-900: rgb(6, 6, 6);
   --color-gray-800: rgb(36, 36, 36);
-  --color-gray-700: rgb(69, 69, 69);
+  --color-gray-700: rgb(60, 60, 60);
   --color-gray-600: rgb(97, 97, 97);
   --color-gray-500: rgb(128, 128, 128);
   --color-gray-400: rgb(156, 156, 156);
@@ -12,6 +12,11 @@
   --color-gray-200: rgb(218, 218, 218);
   --color-gray-100: rgb(240, 240, 240);
   --color-gray-50: rgb(252, 252, 252);
+
+  --color-primary-lighter: rgb(255, 240, 212);
+  --color-primary-light: rgb(255, 222, 164);
+  --color-primary-main: rgb(255, 184, 61);
+  --color-primary-dark: rgb(255, 142, 49);
 
   /* Font */
   --font-size-base: 1rem;
@@ -44,16 +49,22 @@
 /*************************
   ColorMode
 *************************/
-.dark-mode {
-  --color-text: #ebf4f1;
-  --color-primary: #7926d8;
-  --bg: #121212;
-  --border-color: var(--color-gray-700);
+.light-mode {
+  --loading-msg-bg: var(--color-white);
+  --loading-msg-border: var(--color-gray-200);
+  --color-text: var(color-black);
+  --landing-bg: var(--color-primary-lighter);
+  --main-bg: var(--color-primary-light);
+  --border-color: var(--color-gray-200);
+  --logo-text-color: var(--color-black);
 }
 
-.light-mode {
-  --color-text: #1a1a1a;
-  --color-primary: #bf95ef;
-  --bg: #ffffff;
-  --border-color: var(--color-gray-200);
+.dark-mode {
+  --loading-msg-bg: transparent;
+  --loading-msg-border: var(--color-white);
+  --color-text: var(--color-white);
+  --landing-bg: var(--color-black);
+  --main-bg: var(--color-gray-700);
+  --border-color: var(--color-gray-700);
+  --logo-text-color: var(--color-white);
 }

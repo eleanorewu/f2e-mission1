@@ -58,7 +58,7 @@ label {
   cursor: pointer;
   width: 72px;
   height: 32px;
-  background: #aeaeae;
+  background: var(--color-primary-dark);
   display: block;
   border-radius: 6.25rem;
   position: relative;
@@ -99,7 +99,7 @@ label {
 }
 
 input:checked + label {
-  background: #3a3a3a;
+  background: var(--color-gray-800);
 }
 input:checked + label:after {
   left: calc(100% - 5px);
