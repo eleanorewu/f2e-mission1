@@ -38,10 +38,12 @@ import Title from "@/components/Introduce/Title.vue";
       & .filter-item {
         padding: 0.5rem 1rem;
         background-color: transparent;
-        color: var(--color-black);
         border-radius: 4rem;
         font-weight: bold;
+        color: var(--color-black);
         letter-spacing: 0;
+        cursor: pointer;
+        transition: all 0.5s;
         &.checked {
           background-color: var(--filter-item-bg);
         }

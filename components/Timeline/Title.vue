@@ -1,5 +1,5 @@
 <template>
-  <h4 class="block-title">認識喵喵</h4>
+  <h4 class="block-title">喵的日常</h4>
 </template>
 
 <script setup></script>
