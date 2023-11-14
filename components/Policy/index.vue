@@ -1,6 +1,7 @@
 <template>
-  <div class="policy">
+  <div class="block">
     <Title />
+    <div class="container container--policy"></div>
   </div>
 </template>
 
@@ -9,9 +10,7 @@ import Title from "@/components/Policy/Title.vue";
 </script>
 
 <style scoped>
-.policy {
-  width: 100%;
-  /* height: auto; */
+.container--policy {
   height: 200px;
 }
 </style>

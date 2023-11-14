@@ -1,6 +1,7 @@
 <template>
-  <div class="sponsor">
+  <div class="block">
     <Title />
+    <div class="container container--sponsor"></div>
     <button>前往捐款</button>
   </div>
 </template>
@@ -10,9 +11,7 @@ import Title from "@/components/Sponsor/Title.vue";
 </script>
 
 <style scoped>
-.sponsor {
-  width: 100%;
-  /* height: auto; */
+.container--sponsor {
   height: 200px;
 }
 </style>

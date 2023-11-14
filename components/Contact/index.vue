@@ -1,8 +1,9 @@
 <template>
-  <div class="contact">
+  <div class="block">
     <Title />
-    <div class="contact-container">
-      <div class="form">
+    <div class="container container--contact">
+      <div class="bg-vector"></div>
+      <div class="contact-form">
         <div class="input-container">
           <label for="user_name">姓名</label>
           <input
@@ -68,21 +69,35 @@ const sendEmail = () => {
 </script>
 
 <style scoped>
-.contact {
-  width: 100%;
-  height: auto;
-}
-.contact-container {
+.container--contact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  & .form {
+  align-items: center;
+  @media screen and (width <= 760px) {
+    flex-direction: column;
+  }
+  & .bg-vector {
+    width: 50%;
+    height: 20rem;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url(~/assets/images/bg-vector.svg);
+    @media screen and (width <= 760px) {
+      width: 100%;
+      height: 10rem;
+    }
+  }
+  & .contact-form {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    @media screen and (width <= 760px) {
+      width: 100%;
+    }
     & .input-container {
       width: 100%;
       padding: 0.75rem;
