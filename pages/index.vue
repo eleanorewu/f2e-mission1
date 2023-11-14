@@ -1,11 +1,12 @@
 <template>
   <div class="page">
     <Loading />
-    <Card />
-    <IntroduceBox />
-    <h2>喵喵的最新軌跡</h2>
+    <Introduce />
+    <!-- <IntroduceBox /> -->
+    <Policy />
     <Timeline />
-    <ContactForm />
+    <Sponsor />
+    <Contact />
   </div>
 </template>
 

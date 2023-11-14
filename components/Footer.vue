@@ -62,7 +62,7 @@
   & .footer-container {
     width: 100%;
     max-width: 1440px;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     gap: 1rem;
     flex-direction: row;
