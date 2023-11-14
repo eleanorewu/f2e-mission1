@@ -41,7 +41,7 @@ export default defineComponent({
   width: 3.5rem;
   height: 3.5rem;
   background-color: var(--color-primary-dark);
-  color: var(--color-white);
+  color: var(--color-black);
   border: 1px solid var(--color-primary);
   box-shadow: 0 0.25rem 0.5rem rgba(130, 130, 130, 0.15);
   border-radius: 3.5rem;
@@ -52,7 +52,7 @@ export default defineComponent({
   position: fixed;
   right: 2.5rem;
   bottom: 2.5rem;
-  z-index: 1000;
+  z-index: 99;
   @media screen and (width <= 768px) {
     right: 1.5rem;
     bottom: 1.5rem;

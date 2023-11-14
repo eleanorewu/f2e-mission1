@@ -8,29 +8,31 @@
         <li class="filter-item">喵的親友團</li>
         <li class="filter-item">支持本喵</li>
       </ul>
+      <Masonry />
     </div>
   </div>
 </template>
 
 <script setup>
 import Title from "@/components/Introduce/Title.vue";
+import Masonry from "@/components/Introduce/Masonry.vue";
 </script>
 
 <style scoped>
 .container--intro {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   & .filter {
+    margin-bottom: 2rem;
     padding: 0.375rem 0.5rem;
-    max-width: 500px;
     display: flex;
     justify-content: center;
     background-color: var(--filter-bg);
     border-radius: 4rem;
     gap: 0.25rem;
-    @media screen and (width <= 560px) {
-      max-width: 100%;
-    }
     & .filter-item {
       padding: 0.5rem 1rem;
       background-color: transparent;
@@ -40,14 +42,11 @@ import Title from "@/components/Introduce/Title.vue";
       letter-spacing: 0;
       cursor: pointer;
       transition: all 0.5s;
+      word-break: break-all;
       &.checked {
         background-color: var(--filter-item-bg);
       }
     }
-    /* & .intro-content {
-        padding: 2rem 1rem;
-        border: 1px solid #000;
-      } */
   }
 }
 </style>

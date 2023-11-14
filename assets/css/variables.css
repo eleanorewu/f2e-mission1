@@ -61,6 +61,7 @@
   --filter-item-bg: var(--color-primary-main);
   --block-title-bg: var(--color-primary-main);
   --header-bg: var(--color-primary-lighter);
+  --masonry-card-bg: var(--color-white);
   --footer-bg: var(--color-primary-main);
   --copyright-bg: var(--color-black);
   --border-color: var(--color-gray-200);
@@ -78,6 +79,7 @@
   --filter-item-bg: var(--color-white);
   --block-title-bg: var(--color-gray-600);
   --header-bg: var(--color-black);
+  --masonry-card-bg: transparent;
   --footer-bg: var(--color-black);
   --copyright-bg: var(--color-gray-700);
   --border-color: var(--color-gray-700);
