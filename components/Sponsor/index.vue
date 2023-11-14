@@ -1,6 +1,7 @@
 <template>
-  <div class="sponsor">
-    <SponsorTitle />
+  <div class="block">
+    <Title />
+    <div class="container container--sponsor"></div>
     <button>前往捐款</button>
   </div>
 </template>
@@ -9,9 +10,7 @@
 </script>
 
 <style scoped>
-.sponsor {
-  width: 100%;
-  /* height: auto; */
+.container--sponsor {
   height: 200px;
 }
 </style>

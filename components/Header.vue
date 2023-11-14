@@ -123,13 +123,13 @@
   position: fixed;
   top: 0;
   padding: 0.25rem 1rem;
-  background-color: var(--main-bg);
+  background-color: var(--header-bg);
   color: var(--color-text);
   z-index: 2;
 }
 .navagationbar {
   max-width: 1440px;
-  margin: 0.5rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

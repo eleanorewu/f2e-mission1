@@ -1,6 +1,7 @@
 <template>
-  <div class="policy">
-    <PolicyTitle />
+  <div class="block">
+    <Title />
+    <div class="container container--policy"></div>
   </div>
 </template>
 
@@ -8,9 +9,7 @@
 </script>
 
 <style scoped>
-.policy {
-  width: 100%;
-  /* height: auto; */
+.container--policy {
   height: 200px;
 }
 </style>

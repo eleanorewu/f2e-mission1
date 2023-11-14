@@ -1,6 +1,7 @@
 <template>
   <div class="page">
     <Loading />
+    <Landing />
     <Introduce />
     <!-- <IntroduceBox /> -->
     <Policy />
