@@ -21,6 +21,9 @@
 			"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"prettier.disableLanguages": [],
-	"volar.inlayHints.eventArgumentInInlineHandlers":false
+	"volar.inlayHints.eventArgumentInInlineHandlers": false,
+	"i18n-ally.localesPaths": [
+		"locales"
+	]
 }
 	

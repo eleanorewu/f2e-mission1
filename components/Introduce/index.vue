@@ -13,6 +13,7 @@
 </template>
 
 <script setup>
+import Title from "@/components/Introduce/Title.vue";
 </script>
 
 <style scoped>

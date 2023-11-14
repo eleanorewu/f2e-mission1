@@ -6,6 +6,7 @@
 </template>
 
 <script setup>
+import Title from "@/components/Policy/Title.vue";
 </script>
 
 <style scoped>
