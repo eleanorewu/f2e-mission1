@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-import Title from "@/components/Timeline/Title.vue";
 </script>
 
 <style scoped>

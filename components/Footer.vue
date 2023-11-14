@@ -13,31 +13,38 @@
       </ul>
       <ul class="social-media">
         <li>
-          <NuxtLink
-            to="https://store.line.me/stickershop/product/24123123/zh-Hant"
-            title="另開新視窗 前往喵立翰的instagram"
-            target="_blank"
-            external
-            ><font-awesome-icon :icon="['fab', 'instagram']"
-          /></NuxtLink>
+          <ClientOnly>
+            <NuxtLink
+              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
+              title="另開新視窗 前往喵立翰的instagram"
+              target="_blank"
+              external
+              ><font-awesome-icon :icon="['fab', 'instagram']"
+            /></NuxtLink>
+          </ClientOnly>
         </li>
         <li>
-          <NuxtLink
-            to="https://www.facebook.com/CatMemeJustTest?locale=zh_TW"
-            title="另開新視窗 前往貓咪迷因facebook粉絲專頁"
-            target="_blank"
-            external
-            ><font-awesome-icon :icon="['fab', 'facebook']"
-          /></NuxtLink>
+          <ClientOnly>
+            <NuxtLink
+              to="https://www.facebook.com/CatMemeJustTest?locale=zh_TW"
+              title="另開新視窗 前往貓咪迷因facebook粉絲專頁"
+              target="_blank"
+              external
+              >
+              <font-awesome-icon :icon="['fab', 'facebook']"
+            /></NuxtLink>
+          </ClientOnly>
         </li>
         <li>
-          <NuxtLink
-            to="https://youtu.be/5LrG333wKy8?si=-3EnE2ClVnCZDEH2"
-            title="另開新視窗 前往youtube觀看搞笑貓咪"
-            target="_blank"
-            external
-            ><font-awesome-icon :icon="['fab', 'youtube']"
-          /></NuxtLink>
+          <ClientOnly>
+            <NuxtLink
+              to="https://youtu.be/5LrG333wKy8?si=-3EnE2ClVnCZDEH2"
+              title="另開新視窗 前往youtube觀看搞笑貓咪"
+              target="_blank"
+              external
+              ><font-awesome-icon :icon="['fab', 'youtube']"
+            /></NuxtLink>
+          </ClientOnly>
         </li>
       </ul>
     </div>

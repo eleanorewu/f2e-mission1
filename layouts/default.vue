@@ -1,16 +1,16 @@
 <template>
   <div>
     <Loading />
-    <html>
-      <body class="wrapper">
+    <Html>
+      <Body class="wrapper">
         <div class="layout">
           <Header />
           <slot />
           <Footer />
           <ButtonToTop />
         </div>
-      </body>
-    </html>
+      </Body>
+    </Html>
   </div>
 </template>
 

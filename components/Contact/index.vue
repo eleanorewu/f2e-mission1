@@ -1,4 +1,5 @@
 <template>
+
   <div class="block">
     <Title />
     <div class="container container--contact">
@@ -41,7 +42,6 @@
 </template>
 
 <script setup>
-import Title from "@/components/Contact/Title.vue";
 import emailjs from "@emailjs/browser";
 import { ref } from "vue";
 const templateParams = ref({
