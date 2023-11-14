@@ -37,10 +37,11 @@
   /* --color-primary: rgb(122, 85, 255); */
 
   /* Outline */
-  --outline-color: rgb(254, 186, 8);
+  --outline-color: var(--color-primary-dark);
 
   /* link */
-  --link-color: var(--color-primary);
+  --link-color: var(--color-black);
+  /* --color-visited: var(--color-black); */
 
   /* noscript */
   --noscript-bg: var(--color-white);

@@ -69,25 +69,20 @@
       <div></div>
       <ul class="main-menu">
         <li>
-          <a href="/">{{ $t("nav[0]") }}</a>
+          <a href="#">{{ $t("nav[0]") }}</a>
         </li>
         <li>
-          <a href="/">{{ $t("nav[1]") }}</a>
+          <a href="#">{{ $t("nav[1]") }}</a>
         </li>
         <li>
-          <a href="/">{{ $t("nav[2]") }}</a>
+          <a href="#">{{ $t("nav[2]") }}</a>
         </li>
         <li>
-          <a href="/">{{ $t("nav[3]") }}</a>
+          <a href="#">{{ $t("nav[3]") }}</a>
         </li>
         <li>
-          <a href="/">{{ $t("nav[4]") }}</a>
+          <a href="#">{{ $t("nav[4]") }}</a>
         </li>
-        <!-- <li>{{ $t("nav[0]") }}</li>
-        <li>{{ $t("nav[1]") }}</li>
-        <li>{{ $t("nav[2]") }}</li>
-        <li>{{ $t("nav[3]") }}</li>
-        <li>{{ $t("nav[4]") }}</li> -->
       </ul>
       <ul class="action-menu">
         <li>
@@ -101,25 +96,20 @@
     </div>
     <ul class="mobile-menu">
       <li>
-        <a href="/">{{ $t("nav[0]") }}</a>
+        <a href="#">{{ $t("nav[0]") }}</a>
       </li>
       <li>
-        <a href="/">{{ $t("nav[1]") }}</a>
+        <a href="#">{{ $t("nav[1]") }}</a>
       </li>
       <li>
-        <a href="/">{{ $t("nav[2]") }}</a>
+        <a href="#">{{ $t("nav[2]") }}</a>
       </li>
       <li>
-        <a href="/">{{ $t("nav[3]") }}</a>
+        <a href="#">{{ $t("nav[3]") }}</a>
       </li>
       <li>
-        <a href="/">{{ $t("nav[4]") }}</a>
+        <a href="#">{{ $t("nav[4]") }}</a>
       </li>
-      <!-- <li>{{ $t("nav[0]") }}</li>
-      <li>{{ $t("nav[1]") }}</li>
-      <li>{{ $t("nav[2]") }}</li>
-      <li>{{ $t("nav[3]") }}</li>
-      <li>{{ $t("nav[4]") }}</li> -->
     </ul>
   </div>
 </template>

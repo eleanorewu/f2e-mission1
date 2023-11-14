@@ -95,15 +95,15 @@ a {
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px yellow;
+    box-shadow: 0 0 0 3px var(--color-primary-dark);
   }
-  &:visited {
+  /* &:visited {
     color: var(--color-visited);
-  }
+  } */
   &[role="button"] {
     text-decoration: none;
     &[aria-current="page"] {
-      box-shadow: 0 0 0 3px yellow;
+      box-shadow: 0 0 0 3px var(--color-primary-dark);
     }
   }
 }
