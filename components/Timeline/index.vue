@@ -1,6 +1,6 @@
 <template>
   <div class="timeline">
-    <Title />
+    <TimelineTitle />
     <iframe
       src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1dR9TQG2tWyi2qUItkKAettg8ZL0_S2uOHEJFs7ShDWI&font=Default&lang=zh-tw&start_at_end=true&initial_zoom=0&timenav_position=top&height=650"
       width="100%"
@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-import Title from "@/components/Timeline/Title.vue";
 </script>
 
 <style scoped>

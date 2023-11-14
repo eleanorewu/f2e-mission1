@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <Title />
+    <ContactTitle />
     <div class="contact-container">
       <div class="form">
         <div class="input-container">
@@ -40,7 +40,6 @@
 </template>
 
 <script setup>
-import Title from "@/components/Contact/Title.vue";
 import emailjs from "@emailjs/browser";
 import { ref } from "vue";
 const templateParams = ref({

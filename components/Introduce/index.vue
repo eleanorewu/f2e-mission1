@@ -1,6 +1,6 @@
 <template>
   <div class="introduce">
-    <Title />
+    <IntroduceTitle />
     <div class="intro-block">
       <ul class="filter">
         <li class="filter-item checked">喵的所有</li>
@@ -13,7 +13,6 @@
 </template>
 
 <script setup>
-import Title from "@/components/Introduce/Title.vue";
 </script>
 
 <style scoped>

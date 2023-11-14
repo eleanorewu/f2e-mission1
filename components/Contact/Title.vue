@@ -1,5 +1,5 @@
 <template>
-  <h4 class="block-title">喵電感應</h4>
+  <h4 class="block-title" id="contact">喵電感應</h4>
 </template>
 
 <script setup></script>

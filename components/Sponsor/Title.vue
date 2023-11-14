@@ -1,5 +1,5 @@
 <template>
-  <h4 class="block-title">支持喵喵</h4>
+  <h4 class="block-title" id="sponsor">支持喵喵</h4>
 </template>
 
 <script setup></script>

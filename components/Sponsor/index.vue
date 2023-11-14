@@ -1,12 +1,11 @@
 <template>
   <div class="sponsor">
-    <Title />
+    <SponsorTitle />
     <button>前往捐款</button>
   </div>
 </template>
 
 <script setup>
-import Title from "@/components/Sponsor/Title.vue";
 </script>
 
 <style scoped>
