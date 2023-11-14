@@ -69,19 +69,19 @@
       <div></div>
       <ul class="main-menu">
         <li>
-          <a href="#">{{ $t("nav[0]") }}</a>
+          <a href="#introduce">{{ $t("nav[0]") }}</a>
         </li>
         <li>
-          <a href="#">{{ $t("nav[1]") }}</a>
+          <a href="#policy">{{ $t("nav[1]") }}</a>
         </li>
         <li>
-          <a href="#">{{ $t("nav[2]") }}</a>
+          <a href="#timeline">{{ $t("nav[2]") }}</a>
         </li>
         <li>
-          <a href="#">{{ $t("nav[3]") }}</a>
+          <a href="#sponsor">{{ $t("nav[3]") }}</a>
         </li>
         <li>
-          <a href="#">{{ $t("nav[4]") }}</a>
+          <a href="#contact">{{ $t("nav[4]") }}</a>
         </li>
       </ul>
       <ul class="action-menu">
@@ -96,19 +96,19 @@
     </div>
     <ul class="mobile-menu">
       <li>
-        <a href="#">{{ $t("nav[0]") }}</a>
+        <a href="#introduce">{{ $t("nav[0]") }}</a>
       </li>
       <li>
-        <a href="#">{{ $t("nav[1]") }}</a>
+        <a href="#policy">{{ $t("nav[1]") }}</a>
       </li>
       <li>
-        <a href="#">{{ $t("nav[2]") }}</a>
+        <a href="#timeline">{{ $t("nav[2]") }}</a>
       </li>
       <li>
-        <a href="#">{{ $t("nav[3]") }}</a>
+        <a href="#sponsor">{{ $t("nav[3]") }}</a>
       </li>
       <li>
-        <a href="#">{{ $t("nav[4]") }}</a>
+        <a href="#contact">{{ $t("nav[4]") }}</a>
       </li>
     </ul>
   </div>
@@ -127,7 +127,6 @@
   color: var(--color-text);
   z-index: 2;
 }
-
 .navagationbar {
   max-width: 1440px;
   margin: 0.5rem auto;
