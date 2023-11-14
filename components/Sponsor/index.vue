@@ -1,7 +1,7 @@
 <template>
   <div class="sponsor">
     <Title />
-    <button>click</button>
+    <button>前往捐款</button>
   </div>
 </template>
 

@@ -1,7 +1,6 @@
 <template>
   <div class="policy">
     <Title />
-    <button>click</button>
   </div>
 </template>
 

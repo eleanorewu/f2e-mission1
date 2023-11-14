@@ -30,7 +30,7 @@
           cols="30"
         ></textarea>
       </div>
-      <button @click="sendEmail()">Confirm</button>
+      <button @click="sendEmail()">送出</button>
     </div>
   </div>
 </template>

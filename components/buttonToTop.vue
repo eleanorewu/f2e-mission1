@@ -33,19 +33,21 @@ export default defineComponent({
 
 <style scoped>
 .button-to-top {
+  padding: 0;
   display: flex;
   white-space: nowrap;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: var(--color-primary-dark);
   color: var(--color-white);
   border: 1px solid var(--color-primary);
   box-shadow: 0 0.25rem 0.5rem rgba(130, 130, 130, 0.15);
-  border-radius: 3rem;
-  font-size: 0.875rem;
-  letter-spacing: 0;
+  border-radius: 3.5rem;
+  font-size: 0.975rem;
+  letter-spacing: 1px;
+  line-height: 100%;
   font-weight: bold;
   position: fixed;
   right: 2.5rem;
