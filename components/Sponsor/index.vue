@@ -7,6 +7,7 @@
 </template>
 
 <script setup>
+import Title from "@/components/Sponsor/Title.vue";
 </script>
 
 <style scoped>
