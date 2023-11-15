@@ -67,7 +67,7 @@
       </p>
       <b>
         <a
-          href="https://www.figma.com/exit?url=https%3A%2F%2Fyoutube.com%2Fplaylist%3Flist%3DPLtClt7-lTL9-S_IQu9-x4aUX0pCByqY2j%26si%3DmhYTsaCrOaPSoV7B"
+          href="https://www.youtube.com/playlist?list=PLtClt7-lTL9-S_IQu9-x4aUX0pCByqY2j"
           >前往完整播放清單</a
         ></b
       >
