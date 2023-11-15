@@ -1,15 +1,136 @@
 <template>
   <div class="masonry">
-    <div class="item item1"><h4>喵立翰</h4></div>
-    <div class="item item2"><h4>喵的經歷</h4></div>
-    <div class="item item3"><h4>喵最愛看</h4></div>
-    <div class="item item4"><h4>競選總部</h4></div>
-    <div class="item item5"><h4>喵的主題曲</h4></div>
-    <div class="item item6"><h4>喵的愛牌</h4></div>
-    <div class="item item7"><h4>喵的盟友</h4></div>
-    <div class="item item8"><h4>請喵喝珍奶</h4></div>
-    <div class="item item9"><h4>喵的同盟</h4></div>
-    <div class="item item10"><h4>喵生再走，貼圖要有</h4></div>
+    <div class="item item1">
+      <div>
+        <img class="item-img" src="~/assets/images/avatar.png" alt="喵立翰" />
+      </div>
+      <div>
+        <h4>喵立翰</h4>
+        <p class="item-content">
+          三歲已結紮公貓<br />
+          隸屬 勸世貓黨<br />
+          MBTI: ENFJ<br />
+          不分區立委候選人1號<br />
+          即使什麼都不做還是很可愛
+        </p>
+        <p class="item-content">#迷因貓貓 #無障礙挑戰 #珍奶殺手</p>
+      </div>
+    </div>
+    <div class="item item2">
+      <h4>喵的經歷</h4>
+      <p class="item-content">
+        人類馴化師<br />
+        畢業於青椒田大學<br />
+        曾出演百老匯音樂-貓<br />
+        門薩會員<br />
+        貓咪障礙賽冠軍<br />
+        擁有無數個貓奴
+      </p>
+    </div>
+    <div class="item item3">
+      <h4>喵最愛看</h4>
+      <p class="item-content">
+        <b>
+          <a href="https://www.youtube.com/channel/UCypzlOdJyyOR2NhKv0o3zig"
+            >動物星球頻道</a
+          ></b
+        ><br />
+        動物星球頻道是全球唯一的動物紀實娛樂頻道，有新奇、冒險、歡笑、動人情感、還有生與死，以熱情感性的深度內容，為人類與動物搭起橋樑。
+      </p>
+      <p class="item-content">
+        <b
+          ><a href="https://www.youtube.com/@fumeancats">皇阿瑪的後宮生活</a></b
+        >
+        <br />
+        由台灣 YouTuber 志銘與狸貓兩位自稱貓奴的飼主，於2015年創辦的YouTube
+        頻道。內容主要紀錄八隻貓咪的生活，受許多愛貓人士的喜愛。
+      </p>
+      <p class="item-content">
+        <b><a href="https://www.youtube.com/@LadyFlavor">好味小姐</a></b
+        ><br />
+        創建了以貓咪日常和貓食製作為主題的 YouTube 頻道「好味小姐」
+      </p>
+    </div>
+    <div class="item item4">
+      <h4>競選總部</h4>
+      <p class="item-content">喵星路9487巷87號空紙箱</p>
+      <img class="item-img" src="~/assets/images/box.png" alt="空紙箱" />
+    </div>
+    <div class="item item5">
+      <h4>喵的主題曲</h4>
+      <p class="item-content">
+        勸世寶貝-喵電感應<br />
+        林強-向前走<br />
+        葉啟田-愛拼才會贏<br />
+        黃妃-追追追<br />
+        滅火器-長途夜車<br />
+      </p>
+      <b>
+        <a
+          href="https://www.figma.com/exit?url=https%3A%2F%2Fyoutube.com%2Fplaylist%3Flist%3DPLtClt7-lTL9-S_IQu9-x4aUX0pCByqY2j%26si%3DmhYTsaCrOaPSoV7B"
+          >前往完整播放清單</a
+        ></b
+      >
+    </div>
+    <div class="item item6">
+      <h4>喵的愛牌</h4>
+      <p class="item-content">
+        <b><a href="https://piman.cc/">Piman</a></b
+        ><br />
+        喵的嚴選品牌，致力打造網路無障礙空間而誕生的ＵＩ框架。
+      </p>
+      <p class="item-content">
+        <b><a href="https://www.instagram.com/piman_a11y/">社群</a></b
+        ><br />
+        一起來看看 Ｐiman 都在 ig 做什麼。
+      </p>
+      <p class="item-content">
+        <b><a href="https://kusdom.com/piman/zh_tw">周邊商品</a></b
+        ><br />
+        佛要金裝，貓要衣裝.... 最潮貓貓的衣著配件在這裡
+      </p>
+    </div>
+    <div class="item item7">
+      <h4>喵的盟友</h4>
+      <p class="item-content">
+        <b
+          ><a href="https://ithelp.ithome.com.tw/users/20152260/ironman/5614"
+            >無障礙大叔</a
+          ></b
+        ><br />
+        本喵在青椒田大學就讀時的大大前輩-無障礙大叔，發表了一系列無障礙挑戰賽文章，看完讓你人生從此通行無阻。
+      </p>
+    </div>
+    <div class="item item8">
+      <h4>請喵喝珍奶</h4>
+      <p class="item-content">
+        本喵的口有點渴<br />
+        請我喝一杯珍奶吧
+      </p>
+      <b
+        ><a
+          href="https://neillin.bobaboba.me/?source=post_page-----c7466b1faf76--------------------------------"
+          >買珍奶給喵喵</a
+        ></b
+      >
+    </div>
+    <div class="item item9">
+      <h4>喵的同盟</h4>
+      <p class="item-content">
+        <b><a href="https://www.facebook.com/CatPartyTaiwan/">台灣貓黨</a></b
+        ><br />
+        關注台灣貓黨，讓你歡樂無法黨（單押1)讓你時時刻刻被可愛籠罩
+      </p>
+    </div>
+    <div class="item item10">
+      <h4>喵生再走，貼圖要有</h4>
+      <p class="item-content">你的心聲由貓咪來幫你訴說...<br /></p>
+      <b
+        ><a href="https://store.line.me/stickershop/product/24123123/zh-Hant"
+          >點此前往購買Line貼圖</a
+        ></b
+      >
+    </div>
   </div>
 </template>
 
@@ -22,25 +143,40 @@
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  @media screen and (width <= 760px) {
+  @media screen and (width <= 960px) {
     grid-template-columns: repeat(2, 1fr);
   }
   & .item {
-    min-height: 240px;
+    min-height: 180px;
     background-color: var(--masonry-card-bg);
     border: 1px solid var(--color-white);
     color: var(--color-text);
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: 1.5rem;
-    @media screen and (width <= 760px) {
-      min-height: 180px;
+    text-align: left;
+    @media screen and (width <= 960px) {
+      min-height: 100px;
+      padding: 1rem;
     }
   }
+}
+.item-content {
+  margin-bottom: 0.5rem;
+  color: var(--card-content);
+  line-height: 150%;
+}
+.item-img {
+  width: 100%;
+  max-width: 10rem;
+  height: fit-content;
 }
 .item1 {
   /* grid-area: 1 / 1 / 2 / 3; */
   grid-row: span 1;
   grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
 }
 .item2 {
   /* grid-area: 1 / 3 / 2 / 4; */
@@ -66,7 +202,7 @@
   /* grid-area: 2 / 3 / 4 / 4; */
   grid-row: span 2;
   grid-column: span 1;
-  @media screen and (width <= 760px) {
+  @media screen and (width <= 960px) {
     grid-row: span 1;
   }
 }
@@ -74,7 +210,7 @@
   /* grid-area: 3 / 4 / 4 / 5; */
   grid-row: span 1;
   grid-column: span 2;
-  @media screen and (width <= 760px) {
+  @media screen and (width <= 960px) {
     grid-row: span 2;
     grid-column: span 1;
   }
@@ -84,7 +220,7 @@
   /* grid-area: 3 / 1 / 4 / 3; */
   grid-row: span 1;
   grid-column: span 1;
-  @media screen and (width <= 760px) {
+  @media screen and (width <= 960px) {
     grid-row: span 2;
     grid-column: span 1;
   }

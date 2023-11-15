@@ -54,6 +54,7 @@
   --loading-msg-bg: var(--color-white);
   --loading-msg-border: var(--color-gray-200);
   --color-text: var(color-black);
+  --card-content: var(--color-gray-800);
   --copyright-text: var(--color-primary-main);
   --landing-bg: var(--color-primary-lighter);
   --main-bg: var(--color-primary-light);
@@ -72,6 +73,7 @@
   --loading-msg-bg: transparent;
   --loading-msg-border: var(--color-white);
   --color-text: var(--color-white);
+  --card-content: var(--color-gray-200);
   --copyright-text: var(--color-white);
   --landing-bg: var(--color-black);
   --main-bg: var(--color-gray-700);
