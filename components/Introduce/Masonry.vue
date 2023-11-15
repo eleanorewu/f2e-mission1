@@ -140,6 +140,7 @@
 .masonry {
   width: 100%;
   display: grid;
+  transition: height 0.2s ease;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
@@ -168,6 +169,8 @@
     padding: 2rem;
     border-radius: 1.5rem;
     text-align: left;
+    transition: all 250ms ease 0s;
+    will-change: transform;
     @media screen and (width <= 960px) {
       min-height: 160px;
       padding: 1rem;
