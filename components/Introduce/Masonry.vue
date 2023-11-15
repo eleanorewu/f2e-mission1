@@ -1,5 +1,5 @@
 <template>
-  <div class="masonry">
+  <div class="masonry" id="masonry">
     <div class="item item1">
       <div>
         <img class="item-img" src="~/assets/images/avatar.png" alt="喵立翰" />
@@ -140,11 +140,26 @@
 .masonry {
   width: 100%;
   display: grid;
+  transition: height 0.2s ease;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+  grid-template-areas:
+    "in in ex me"
+    "ad mu br me"
+    "fr fr br te"
+    "al al st st";
   @media screen and (width <= 960px) {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "in in"
+      "ex ad"
+      "mu te"
+      "fr fr"
+      "br me"
+      "br me"
+      "al al"
+      "st st";
   }
   & .item {
     min-height: 180px;
@@ -154,9 +169,110 @@
     padding: 2rem;
     border-radius: 1.5rem;
     text-align: left;
+    transition: all 250ms ease 0s;
+    will-change: transform;
     @media screen and (width <= 960px) {
-      min-height: 100px;
+      min-height: 160px;
       padding: 1rem;
+    }
+  }
+}
+.introduce {
+  grid-template-areas:
+    "in in ex ad"
+    "mu te br me"
+    "fr fr br me"
+    "al al st st";
+  @media screen and (width <= 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "in in"
+      "mu ex"
+      "ad te"
+      "fr fr"
+      "br me"
+      "br me"
+      "al al"
+      "st st";
+  }
+  & .item3,
+  .item6,
+  .item7,
+  .item8,
+  .item9,
+  .item10 {
+    background-color: var(--masonry-card-bg);
+    opacity: 0.5;
+    cursor: not-allowed;
+    & a {
+      pointer-events: none;
+    }
+  }
+}
+
+.friends {
+  grid-template-areas:
+    "fr fr br me"
+    "al al br me"
+    "in in ex ad"
+    "mu te st st";
+  @media screen and (width <= 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "fr fr"
+      "al al"
+      "br me"
+      "br me"
+      "in in"
+      "mu ex"
+      "ad te"
+      "st st";
+  }
+  & .item1,
+  .item2,
+  .item4,
+  .item5,
+  .item8,
+  .item10 {
+    background-color: var(--masonry-card-bg);
+    opacity: 0.5;
+    cursor: not-allowed;
+    & a {
+      pointer-events: none;
+    }
+  }
+}
+.support {
+  grid-template-areas:
+    "te st st ad"
+    "br me in in"
+    "br me fr fr"
+    "al al ex mu";
+  @media screen and (width <= 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "st st"
+      "te ad"
+      "br me"
+      "br me"
+      "in in"
+      "fr fr"
+      "al al"
+      "mu ex";
+  }
+  & .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item9 {
+    background-color: var(--masonry-card-bg);
+    opacity: 0.5;
+    cursor: not-allowed;
+    & a {
+      pointer-events: none;
     }
   }
 }
@@ -177,62 +293,75 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1rem;
+  grid-area: in;
+  /* @media screen and (width <= 960px) {
+    grid-row: span 1;
+  } */
 }
 .item2 {
   /* grid-area: 1 / 3 / 2 / 4; */
   grid-row: span 1;
   grid-column: span 1;
+  grid-area: ex;
 }
 .item3 {
   /* grid-area: 1 / 4 / 3 / 5; */
   grid-row: span 2;
   grid-column: span 1;
+  grid-area: me;
 }
 .item4 {
   /* grid-area: 2 / 1 / 3 / 2; */
   grid-row: span 1;
   grid-column: span 1;
+  grid-area: ad;
 }
 .item5 {
   /* grid-area: 2 / 2 / 3 / 3; */
   grid-row: span 1;
   grid-column: span 1;
+  grid-area: mu;
 }
 .item6 {
   /* grid-area: 2 / 3 / 4 / 4; */
   grid-row: span 2;
   grid-column: span 1;
-  @media screen and (width <= 960px) {
+  grid-area: br;
+  /* @media screen and (width <= 960px) {
     grid-row: span 1;
-  }
+  } */
 }
 .item7 {
   /* grid-area: 3 / 4 / 4 / 5; */
   grid-row: span 1;
   grid-column: span 2;
-  @media screen and (width <= 960px) {
+  grid-area: fr;
+  /* @media screen and (width <= 960px) {
     grid-row: span 2;
     grid-column: span 1;
-  }
+  } */
 }
 
 .item8 {
   /* grid-area: 3 / 1 / 4 / 3; */
   grid-row: span 1;
   grid-column: span 1;
-  @media screen and (width <= 960px) {
+  grid-area: te;
+  /* @media screen and (width <= 960px) {
     grid-row: span 2;
     grid-column: span 1;
-  }
+  } */
 }
 .item9 {
   /* grid-area: 4 / 1 / 5 / 3; */
   grid-row: span 1;
   grid-column: span 2;
+  grid-area: al;
 }
 .item10 {
   /* grid-area: 4 / 3 / 5 / 5; */
   grid-row: span 1;
   grid-column: span 2;
+  grid-area: st;
 }
 </style>

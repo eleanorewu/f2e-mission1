@@ -3,10 +3,34 @@
     <Title />
     <div class="container container--intro">
       <ul class="filter">
-        <li class="filter-item checked">喵的所有</li>
-        <li class="filter-item">喵的介紹</li>
-        <li class="filter-item">喵的親友團</li>
-        <li class="filter-item">支持本喵</li>
+        <li
+          class="filter-item"
+          :class="{ checked: tab === '' }"
+          @click="changeTab()"
+        >
+          喵的所有
+        </li>
+        <li
+          class="filter-item"
+          :class="{ checked: tab === 'introduce' }"
+          @click="changeTab('introduce')"
+        >
+          喵的介紹
+        </li>
+        <li
+          class="filter-item"
+          :class="{ checked: tab === 'friends' }"
+          @click="changeTab('friends')"
+        >
+          喵的親友團
+        </li>
+        <li
+          class="filter-item"
+          :class="{ checked: tab === 'support' }"
+          @click="changeTab('support')"
+        >
+          支持本喵
+        </li>
       </ul>
       <Masonry />
     </div>
@@ -16,6 +40,20 @@
 <script setup>
 import Title from "@/components/Introduce/Title.vue";
 import Masonry from "@/components/Introduce/Masonry.vue";
+const tab = ref("");
+const changeTab = (label) => {
+  const container = document.getElementById("masonry");
+  if (!label) {
+    container.classList = ["masonry"];
+    tab.value = "";
+  }
+  container.classList.toggle(label);
+  if (container.classList[container.classList.length - 1] === label) {
+    container.classList = ["masonry"];
+    container.classList.add(label);
+    tab.value = label;
+  }
+};
 </script>
 
 <style scoped>
