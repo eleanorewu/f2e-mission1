@@ -150,7 +150,7 @@
     "al al st st";
   @media screen and (width <= 960px) {
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-areas:
+    grid-template-areas:
       "in in"
       "ex ad"
       "mu te"
@@ -158,7 +158,7 @@
       "br me"
       "br me"
       "al al"
-      "st st"; */
+      "st st";
   }
   & .item {
     min-height: 180px;
@@ -169,7 +169,7 @@
     border-radius: 1.5rem;
     text-align: left;
     @media screen and (width <= 960px) {
-      min-height: 100px;
+      min-height: 160px;
       padding: 1rem;
     }
   }
@@ -180,6 +180,18 @@
     "mu te br me"
     "fr fr br me"
     "al al st st";
+  @media screen and (width <= 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "in in"
+      "mu ex"
+      "ad te"
+      "fr fr"
+      "br me"
+      "br me"
+      "al al"
+      "st st";
+  }
   & .item3,
   .item6,
   .item7,
@@ -189,17 +201,30 @@
     background-color: var(--masonry-card-bg);
     opacity: 0.5;
     cursor: not-allowed;
-  }
-  & a {
-    pointer-events: none;
+    & a {
+      pointer-events: none;
+    }
   }
 }
+
 .friends {
   grid-template-areas:
     "fr fr br me"
     "al al br me"
     "in in ex ad"
     "mu te st st";
+  @media screen and (width <= 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "fr fr"
+      "al al"
+      "br me"
+      "br me"
+      "in in"
+      "mu ex"
+      "ad te"
+      "st st";
+  }
   & .item1,
   .item2,
   .item4,
@@ -209,6 +234,9 @@
     background-color: var(--masonry-card-bg);
     opacity: 0.5;
     cursor: not-allowed;
+    & a {
+      pointer-events: none;
+    }
   }
 }
 .support {
@@ -217,6 +245,18 @@
     "br me in in"
     "br me fr fr"
     "al al ex mu";
+  @media screen and (width <= 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "st st"
+      "te ad"
+      "br me"
+      "br me"
+      "in in"
+      "fr fr"
+      "al al"
+      "mu ex";
+  }
   & .item1,
   .item2,
   .item3,
@@ -228,6 +268,9 @@
     background-color: var(--masonry-card-bg);
     opacity: 0.5;
     cursor: not-allowed;
+    & a {
+      pointer-events: none;
+    }
   }
 }
 .item-content {
