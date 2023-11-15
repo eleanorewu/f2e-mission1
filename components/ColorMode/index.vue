@@ -69,7 +69,7 @@ label {
     left: 4.5px;
     width: 25px;
     height: 25px;
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 5.75rem;
     transition: 0.3s;
   }
@@ -78,7 +78,7 @@ label {
 .color-mode-switch::before,
 .color-mode-switch::after {
   display: block;
-  color: #fff;
+  color: var(--color-white);
   box-sizing: border-box;
 }
 
@@ -99,7 +99,7 @@ label {
 }
 
 input:checked + label {
-  background: var(--color-gray-800);
+  background: var(--color-gray-600);
 }
 input:checked + label:after {
   left: calc(100% - 5px);

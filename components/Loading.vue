@@ -1,11 +1,7 @@
 <template lang="html">
   <div class="loading-page" v-if="showLoading">
     <div class="loading-indicator">
-      <img
-        class="avatar"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlE7FjHztLrji72AKd5EvLnj21j8YdicZOFhzJQhadw&s"
-        alt=""
-      />
+      <img class="avatar" src="~/assets/images/avatar.png" alt="喵立翰" />
       <div class="msg-box">
         <span class="msg" :key="msgContent">{{ msgContent }}</span>
         <span>選一隻會做事的貓咪...</span>
@@ -47,10 +43,10 @@ setTimeout(() => {
   & img {
     width: 4.5rem;
     height: 4.5rem;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 4.5rem;
     overflow: hidden;
-    border: 1px solid var(--border-color);
+    border-color: 1px solid var(--color-black);
     @media screen and (width <= 480px) {
       width: 3rem;
       height: 3rem;
