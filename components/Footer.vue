@@ -15,7 +15,7 @@
         <li>
           <ClientOnly>
             <NuxtLink
-              to="https://store.line.me/stickershop/product/24123123/zh-Hant"
+              to="https://www.instagram.com/cat_memes_222/"
               title="另開新視窗 前往喵立翰的instagram"
               target="_blank"
               external
@@ -30,7 +30,7 @@
               title="另開新視窗 前往貓咪迷因facebook粉絲專頁"
               target="_blank"
               external
-              >
+            >
               <font-awesome-icon :icon="['fab', 'facebook']"
             /></NuxtLink>
           </ClientOnly>
