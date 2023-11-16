@@ -5,14 +5,21 @@
     <Introduce />
     <!-- <IntroduceBox /> -->
     <Policy />
-    <Timeline />
+    <Timeline :colorMode="colorMode" :lang="lang" />
     <Sponsor />
     <Contact />
   </div>
 </template>
 
 <script setup>
-const colorMode = useColorMode();
+import { useI18n } from 'vue-i18n'
+
+const { preference } = useColorMode();
+const { locale } = useI18n()
+
+const colorMode = ref(preference)
+const lang = ref(locale)
+
 </script>
 
 <style scoped>
