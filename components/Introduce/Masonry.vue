@@ -140,7 +140,6 @@
 .masonry {
   width: 100%;
   display: grid;
-  transition: height 0.2s ease;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
