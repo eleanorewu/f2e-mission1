@@ -8,28 +8,28 @@
           :class="{ checked: tab === '' }"
           @click="changeTab()"
         >
-          喵的所有
+          {{ $t("introduce-tab[0]") }}
         </li>
         <li
           class="filter-item"
           :class="{ checked: tab === 'introduce' }"
           @click="changeTab('introduce')"
         >
-          喵的介紹
+          {{ $t("introduce-tab[1]") }}
         </li>
         <li
           class="filter-item"
           :class="{ checked: tab === 'friends' }"
           @click="changeTab('friends')"
         >
-          喵的親友團
+          {{ $t("introduce-tab[2]") }}
         </li>
         <li
           class="filter-item"
           :class="{ checked: tab === 'support' }"
           @click="changeTab('support')"
         >
-          支持本喵
+          {{ $t("introduce-tab[3]") }}
         </li>
       </ul>
       <Masonry />
