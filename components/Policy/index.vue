@@ -202,7 +202,7 @@ import Title from "@/components/Policy/Title.vue";
   & h4 {
     font-size: 1.25rem;
   }
-  & p {
+  :is(p) {
     font-size: 1rem;
     color: var(--card-content);
     margin-bottom: 1rem;
