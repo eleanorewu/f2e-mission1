@@ -291,52 +291,52 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1rem;
-  grid-area: in;
+  grid-area: in !important;
 }
 .item2 {
   grid-row: span 1;
   grid-column: span 1;
-  grid-area: ex;
+  grid-area: ex !important;
 }
 .item3 {
   grid-row: span 2;
   grid-column: span 1;
-  grid-area: me;
+  grid-area: me !important;
 }
 .item4 {
   grid-row: span 1;
   grid-column: span 1;
-  grid-area: ad;
+  grid-area: ad !important;
 }
 .item5 {
   grid-row: span 1;
   grid-column: span 1;
-  grid-area: mu;
+  grid-area: mu !important;
 }
 .item6 {
   grid-row: span 2;
   grid-column: span 1;
-  grid-area: br;
+  grid-area: br !important;
 }
 .item7 {
   grid-row: span 1;
   grid-column: span 2;
-  grid-area: fr;
+  grid-area: fr !important;
 }
 
 .item8 {
   grid-row: span 1;
   grid-column: span 1;
-  grid-area: te;
+  grid-area: te !important;
 }
 .item9 {
   grid-row: span 1;
   grid-column: span 2;
-  grid-area: al;
+  grid-area: al !important;
 }
 .item10 {
   grid-row: span 1;
   grid-column: span 2;
-  grid-area: st;
+  grid-area: st !important;
 }
 </style>
