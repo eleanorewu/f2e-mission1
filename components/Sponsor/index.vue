@@ -2,7 +2,7 @@
   <div class="block">
     <Title />
     <div class="container container--sponsor"></div>
-    <button>前往捐款</button>
+    <button>{{ $t("sponsor.cta") }}</button>
   </div>
 </template>
 

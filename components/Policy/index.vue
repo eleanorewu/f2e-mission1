@@ -10,23 +10,19 @@
             alt="政策一插圖"
           />
           <div class="card-front-info">
-            <h4>政策一</h4>
-            <b>全面引入貓咪</b>
-            <b>幫助人類演化</b>
+            <h4>{{ $t("policy.first.front.title") }}</h4>
+            <b>{{ $t("policy.first.front.subtitle1") }}</b>
+            <b>{{ $t("policy.first.front.subtitle2") }}</b>
           </div>
         </div>
         <div class="back">
           <div class="card-back-info">
-            <h4>打造城市貓咪吉祥物</h4>
-            <p>
-              改善城市設施並提供貓咪友善的空間，例如：貓咪公園和貓咪咖啡廳，讓人類的生活被可愛貓咪入侵，增加身心靈快樂指數♥♥♥
-            </p>
-            <h4>你領養 ! 我減稅 !</h4>
-            <p>
-              當人類領養或收留流浪貓時，只要提出相關證明文件通過申請後，可以獲得一定的稅收減免，鼓勵人們合法收養寵物並提供資源支持貓咪的基本護理和保護。
-            </p>
-            <h4>散播迷因散播愛</h4>
-            <p>每日於社群平台發佈貓咪迷因貼文，追蹤起來人生更快樂！</p>
+            <h4>{{ $t("policy.first.back.title1") }}</h4>
+            <p>{{ $t("policy.first.back.content1") }}</p>
+            <h4>{{ $t("policy.first.back.title2") }}</h4>
+            <p>{{ $t("policy.first.back.content2") }}</p>
+            <h4>{{ $t("policy.first.back.title3") }}</h4>
+            <p>{{ $t("policy.first.back.content3") }}</p>
           </div>
         </div>
       </div>
@@ -38,25 +34,19 @@
             alt="政策一插圖"
           />
           <div class="card-front-info">
-            <h4>政策二</h4>
-            <b>人類無障礙</b>
-            <b>貓貓才會愛</b>
+            <h4>{{ $t("policy.second.front.title") }}</h4>
+            <b>{{ $t("policy.second.front.subtitle1") }}</b>
+            <b>{{ $t("policy.second.front.subtitle2") }}</b>
           </div>
         </div>
         <div class="back">
           <div class="card-back-info">
-            <h4>落實友善的無障礙社區</h4>
-            <p>
-              改善無障礙通行道路、步道，落實無障礙交通設施和公共空間，以便所有人和寵物都能夠輕鬆移動，讓人類和毛孩都能通行無阻享受生活。
-            </p>
-            <h4>建立無障礙資訊社會</h4>
-            <p>
-              確保網站和數位應用都具備無障礙功能，提供教育訓練給網站開發者，同時推動無障礙數位內容標準之執行。
-            </p>
-            <h4>無障礙住房成為基本權利</h4>
-            <p>
-              供財政激勵計劃鼓勵現有住房進行無障礙改造，新建住房項目應具備無障礙入口和設施。
-            </p>
+            <h4>{{ $t("policy.second.back.title1") }}</h4>
+            <p>{{ $t("policy.second.back.content1") }}</p>
+            <h4>{{ $t("policy.second.back.title2") }}</h4>
+            <p>{{ $t("policy.second.back.content2") }}</p>
+            <h4>{{ $t("policy.second.back.title3") }}</h4>
+            <p>{{ $t("policy.second.back.content3") }}</p>
           </div>
         </div>
       </div>
@@ -68,25 +58,19 @@
             alt="政策一插圖"
           />
           <div class="card-front-info">
-            <h4>政策三</h4>
-            <b>友善動物</b>
-            <b>快樂人類</b>
+            <h4>{{ $t("policy.third.front.title") }}</h4>
+            <b>{{ $t("policy.third.front.subtitle1") }}</b>
+            <b>{{ $t("policy.third.front.subtitle2") }}</b>
           </div>
         </div>
         <div class="back">
           <div class="card-back-info">
-            <h4>保護弱勢野生動物</h4>
-            <p>
-              強化法律保護動物和加強執法措施，打擊動物虐待行為，包括非法盜獵和非法寵物交易，確保動物的生存的權利與福祉。
-            </p>
-            <h4>設立認養小棧</h4>
-            <p>
-              持續開發毛孩多元認養管道，結合鄰里辦公室設立愛心認養小棧，增加曝光及認養機會，也讓民眾認養更佳便利。
-            </p>
-            <h4>犬貓長照服務</h4>
-            <p>
-              為長期傷殘、罹患慢性疾病或高齡毛孩提供妥善照護友善環境，提升動物長照醫療福祉。
-            </p>
+            <h4>{{ $t("policy.third.back.title1") }}</h4>
+            <p>{{ $t("policy.third.back.content1") }}</p>
+            <h4>{{ $t("policy.third.back.title2") }}</h4>
+            <p>{{ $t("policy.third.back.content2") }}</p>
+            <h4>{{ $t("policy.third.back.title3") }}</h4>
+            <p>{{ $t("policy.third.back.content3") }}</p>
           </div>
         </div>
       </div>

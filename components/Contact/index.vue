@@ -5,7 +5,7 @@
       <div class="bg-vector"></div>
       <div class="contact-form">
         <div class="input-container">
-          <label for="user_name">姓名</label>
+          <label for="user_name">{{ $t("contact.name") }}</label>
           <input
             type="text"
             name="user_name"
@@ -15,7 +15,7 @@
           />
         </div>
         <div class="input-container">
-          <label for="user_mail">E-mail</label>
+          <label for="user_mail">{{ $t("contact.email") }}</label>
           <input
             type="text"
             name="user_mail"
@@ -25,7 +25,7 @@
           />
         </div>
         <div class="input-container">
-          <label for="user_message">內容</label>
+          <label for="user_message">{{ $t("contact.content") }}</label>
           <textarea
             name="user_message"
             id="user_message"
@@ -34,7 +34,7 @@
             placeholder="請輸入內容"
           ></textarea>
         </div>
-        <button @click="sendEmail()">送出</button>
+        <button @click="sendEmail()">{{ $t("contact.submit") }}</button>
       </div>
     </div>
   </div>
