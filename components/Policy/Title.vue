@@ -1,5 +1,5 @@
 <template>
-  <h4 class="block-title" id="policy">喵的未來</h4>
+  <h4 class="block-title" id="policy">{{ $t("nav[1]") }}</h4>
 </template>
 
 <script setup></script>
