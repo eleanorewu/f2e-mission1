@@ -9,7 +9,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+onMounted(() => {
+  useLandingParallax();
+})
+</script>
 
 <style scoped>
 .landing {
