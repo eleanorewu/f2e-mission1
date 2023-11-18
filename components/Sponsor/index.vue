@@ -13,13 +13,16 @@
         <img class="coin3" src="../../assets/images/coin.svg" alt="">
         <img class="coin4" src="../../assets/images/coin.svg" alt="">
       </div>
-      <button type="button" @click="location.href='https://neillin.bobaboba.me/?source=post_page-----c7466b1faf76--------------------------------'">{{ $t("sponsor.cta") }}</button>
+      <button type="button" @click="toPage()">{{ $t("sponsor.cta") }}</button>
     </div>
   </div>
 </template>
 
 <script setup>
 import Title from "@/components/Sponsor/Title.vue";
+const toPage = () => { 
+  window.open('https://neillin.bobaboba.me/?source=post_page-----c7466b1faf76--------------------------------')
+}
 onMounted(() => {
   useSponsorParallax();
 })
