@@ -11,13 +11,18 @@
 <script setup>
 import LightIcon from "@/components/ColorMode/LightIcon.vue";
 import DarkIcon from "@/components/ColorMode/DarkIcon.vue";
+
+const currentMode = useCookie('currentMode');
+
 const colorMode = useColorMode();
 const darkMode = () => {
   colorMode.preference = "dark";
+  currentMode.value = "dark";
   document.getElementById("colormode-switch").checked = true;
 };
 const lightMode = () => {
   colorMode.preference = "light";
+  currentMode.value = "light";
   document.getElementById("colormode-switch").checked = false;
 };
 
@@ -26,7 +31,7 @@ const dateCompare = (time) => {
   if (time <= 1 || time <= 8 || time >= timestamp) {
     return darkMode();
   }
-  lightMode();
+  return lightMode();
 };
 
 const swtichMode = () => {
@@ -40,7 +45,13 @@ const swtichMode = () => {
 };
 onMounted(() => {
   let localTime = new Date().getHours();
-  dateCompare(localTime);
+  if (!currentMode.value) { 
+    dateCompare(localTime);
+  }
+  let mode = currentMode.value;
+  if (mode === 'dark') { 
+    document.getElementById("colormode-switch").checked = true;
+  };
 });
 </script>
 
