@@ -14,14 +14,12 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Loading from "~/components/Loading.vue";
 
-export default {
-  components: {
-    Loading,
-  },
-};
+onMounted(() => {
+		useSmoothScroll()
+	})
 </script>
 
 <style scoped></style>
