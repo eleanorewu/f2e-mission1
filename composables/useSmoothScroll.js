@@ -20,7 +20,7 @@ export const useSmoothScroll = () => {
     }
   })
   tl.to('.content', {
-    yPercent: -50,
+    yPercent: -60,
     ease: "none",
     scrollTrigger: {
       trigger: ".landing",
