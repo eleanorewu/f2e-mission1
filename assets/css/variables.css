@@ -53,7 +53,8 @@
 .light-mode {
   --loading-msg-bg: var(--color-white);
   --loading-msg-border: var(--color-gray-200);
-  --color-text: var(color-black);
+  --color-text: var(--color-black);
+  --text-gray: var(--color-gray-600);
   --card-content: var(--color-gray-800);
   --copyright-text: var(--color-primary-main);
   --landing-bg: var(--color-primary-lighter);
@@ -74,6 +75,7 @@
   --loading-msg-bg: transparent;
   --loading-msg-border: var(--color-white);
   --color-text: var(--color-white);
+  --text-gray: var(--color-gray-300);
   --card-content: var(--color-gray-200);
   --copyright-text: var(--color-white);
   --landing-bg: var(--color-black);

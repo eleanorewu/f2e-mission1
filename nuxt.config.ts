@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets',
   },
   "imports": {
-    "dirs": ['stores']
+    "dirs": ['stores', 'utils']
   },
   plugins:["~/plugins/i18n.js"],
   "modules": ['@pinia/nuxt', '@nuxtjs/color-mode'],
