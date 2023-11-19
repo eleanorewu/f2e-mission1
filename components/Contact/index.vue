@@ -43,6 +43,8 @@
 <script setup>
 import Title from "@/components/Contact/Title.vue";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'
+
 import { ref } from "vue";
 const templateParams = ref({
   from_name: "喵立翰",
@@ -51,21 +53,36 @@ const templateParams = ref({
   user_message: "",
 });
 const sendEmail = () => {
-  console.log(templateParams.value);
-  emailjs
-    .send(
-      "service_miao",
-      "template_lzsob5s",
-      templateParams.value,
-      "RNpRVqqWxNOaAiODy"
-    )
-    .then((res) => {
-      alert("Successfully!", res);
-    }),
-    (err) => {
-      alert("Failed QQ", err);
-    };
-};
+  
+    emailjs
+      .send(
+        "service_miao",
+        "template_lzsob5s",
+        templateParams.value,
+        "RNpRVqqWxNOaAiODy"
+      )
+      .then((res) => {
+        console.log(res);
+        Swal.fire({
+          title: "喵立翰聽到了您的心聲！快去信箱查看喵喵的回覆 ♥",
+          width: 600,
+          padding: "3em",
+          color: "#716add",
+          confirmButtonText: "喵喵!",
+          backdrop: `
+            rgba(0,0,123,0.4)
+            url("https://media.tenor.com/rI_0O_9AJ5sAAAAi/nyan-cat-poptart-cat.gif")
+            center top
+            no-repeat
+          `
+        });
+      }),
+      (err) => {
+        alert("幫喵喵確認一下有沒有填寫錯誤呦 QQ", err);
+      };
+  
+}
+
 </script>
 
 <style scoped>
@@ -119,6 +136,7 @@ const sendEmail = () => {
         padding: 0.5rem 1rem;
         border-radius: 0.75rem;
         background-color: var(--color-white);
+        color: var(--text-gray);
       }
       & textarea {
         width: 100%;
@@ -126,6 +144,7 @@ const sendEmail = () => {
         padding: 0.5rem 1rem;
         border-radius: 0.75rem;
         background-color: var(--color-white);
+        color: var(--text-gray);
       }
     }
   }

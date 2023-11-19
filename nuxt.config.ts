@@ -15,8 +15,8 @@ export default defineNuxtConfig({
           { "property": "og:description", "content": "這是 喵立翰｜2024不分區立委競選官方網站" },
       ],
       link: [
-        { rel: "icon", type: "image/png", href: "/favicon.ico" }
-      ]
+        { rel: "icon", type: "image/png", href: "/favicon.ico" },
+      ],
     },
     baseURL: '/f2e-mission1/',
     buildAssetsDir: 'assets',
