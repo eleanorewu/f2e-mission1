@@ -76,10 +76,18 @@ const sendEmail = () => {
             no-repeat
           `
         });
-      }),
-      (err) => {
-        alert("幫喵喵確認一下有沒有填寫錯誤呦 QQ", err);
-      };
+      })
+      .catch((err) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "幫喵喵確認一下有沒有填寫錯誤呦 QQ",
+          backdrop: `
+            rgba(255,0,0,0.3)
+          `
+        });
+      })
+      
   
 }
 
