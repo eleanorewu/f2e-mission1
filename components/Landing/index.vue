@@ -1,8 +1,9 @@
 <template>
   <div class="landing">
     <p class="big-title">喵立翰</p>
-    <img src="../../assets/images/meow.svg" alt="meowLiHan" class="meow">
-    <p class="sub-title">{{ $t("landing.title") }}
+    <img src="../../assets/images/meow.svg" alt="meowLiHan" class="meow" />
+    <p class="sub-title">
+      {{ $t("landing.title") }}
       <span class="number-one">1</span>
     </p>
     <div class="content">{{ $t("landing.content") }}</div>
@@ -12,7 +13,7 @@
 <script setup>
 onMounted(() => {
   useLandingParallax();
-})
+});
 </script>
 
 <style scoped>
@@ -38,14 +39,14 @@ onMounted(() => {
     padding: 100px 6rem 0;
   }
   @media screen and (width <= 768px) {
-    height:35vh;
+    height: 35vh;
     padding: 0px 1rem 0;
   }
 }
 .big-title {
   font-size: 12rem;
   font-weight: bold;
-  letter-spacing:40px;
+  letter-spacing: 40px;
   position: relative;
   bottom: -200px;
   padding-bottom: 1rem;
@@ -74,15 +75,15 @@ onMounted(() => {
 }
 .sub-title {
   font-size: 4.75rem;
-  font-weight:bolder;
+  font-weight: bolder;
   text-align: left;
-  margin-left:4.5rem;
+  margin-left: 4.5rem;
   margin-bottom: 2.25rem;
   letter-spacing: 8px;
   & .number-one {
     font-size: 4.5rem;
-    color: #DA4134;
-    border: 8px solid #DA4134;
+    color: #da4134;
+    border: 8px solid #da4134;
     padding: 1px 25px;
     border-radius: 50%;
   }
@@ -105,7 +106,7 @@ onMounted(() => {
     margin-bottom: 0.75rem;
     & .number-one {
       font-size: 1.5rem;
-      border: 3px solid #DA4134;
+      border: 3px solid #da4134;
       padding: 1px 8px;
     }
   }
@@ -117,7 +118,7 @@ onMounted(() => {
     padding-bottom: 1.5rem;
     & .number-one {
       font-size: 1.5rem;
-      border: 3px solid #DA4134;
+      border: 3px solid #da4134;
       padding: 1px 8px;
     }
   }
@@ -133,7 +134,7 @@ onMounted(() => {
   max-width: 500px;
   @media screen and (width <= 1640px) {
     margin-left: 4rem;
-    font-size:1rem;
+    font-size: 1rem;
     max-width: 400px;
   }
   @media screen and (width <= 768px) {
@@ -149,30 +150,30 @@ onMounted(() => {
   width: 34rem;
   position: absolute;
   bottom: -10rem;
-  clip:rect(0 34rem 34rem 0px);
+  clip: rect(0 34rem 34rem 0px);
   @media screen and (width <= 1640px) {
     width: 28rem;
     right: 220px;
     bottom: -9.25rem;
-    clip:rect(0 27rem 27rem 0px);
+    clip: rect(0 27rem 27rem 0px);
   }
   @media screen and (width <= 1200px) {
     width: 26rem;
     bottom: -7.75rem;
     right: 130px;
-    clip:rect(0 26rem 26rem 0px);
+    clip: rect(0 26rem 26rem 0px);
   }
   @media screen and (width <= 960px) {
     width: 20rem;
     right: 40px;
     bottom: -5.85rem;
-    clip:rect(0 20rem 20rem 0px);
+    clip: rect(0 20rem 20rem 0px);
   }
   @media screen and (width <= 768px) {
     width: 16rem;
     right: 0;
     bottom: -4.75rem;
-    clip:rect(0 16rem 16rem 0px);
+    clip: rect(0 16rem 16rem 0px);
   }
 }
 </style>

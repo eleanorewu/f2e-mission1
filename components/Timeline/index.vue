@@ -18,18 +18,22 @@
 <script setup>
 import Title from "@/components/Timeline/Title.vue";
 import { watch } from "vue";
-const props = defineProps(['colorMode', 'lang'])
-const srcID = ref('')
+const props = defineProps(["colorMode", "lang"]);
+const srcID = ref("");
 
 const getSrcID = (lang) => {
-    if(props.lang === 'zhTW') return '1dR9TQG2tWyi2qUItkKAettg8ZL0_S2uOHEJFs7ShDWI'
-    else if (props.lang == 'meow') return '1yJXBeQioa_mpX7RT10jgjr0WY-_tF-kQveeYdyaxjWg'
-}
-srcID.value = getSrcID(props.lang)
-watch(() => props.lang, (val) => {
-    srcID.value = getSrcID(val)
-})
-
+  if (props.lang === "zhTW")
+    return "1dR9TQG2tWyi2qUItkKAettg8ZL0_S2uOHEJFs7ShDWI";
+  else if (props.lang == "meow")
+    return "1yJXBeQioa_mpX7RT10jgjr0WY-_tF-kQveeYdyaxjWg";
+};
+srcID.value = getSrcID(props.lang);
+watch(
+  () => props.lang,
+  (val) => {
+    srcID.value = getSrcID(val);
+  }
+);
 </script>
 
 <style scoped>

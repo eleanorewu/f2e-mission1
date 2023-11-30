@@ -18,8 +18,8 @@
 import Loading from "~/components/Loading.vue";
 
 onMounted(() => {
-		useSmoothScroll()
-	})
+  useSmoothScroll();
+});
 </script>
 
 <style scoped></style>
