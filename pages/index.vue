@@ -94,4 +94,61 @@ h1 {
   background-color: var(--main-bg);
   border: none;
 }
+
+:deep(.tl-timemarker .tl-timemarker-content-container) {
+  background-color: var(--main-bg);
+}
+:deep(.tl-timeaxis-background) {
+  background-color: var(--main-bg);
+  border-top: none;
+}
+
+:deep(
+    .tl-timeaxis
+      .tl-timeaxis-content-container
+      .tl-timeaxis-major
+      .tl-timeaxis-tick
+  ) {
+  color: var(--color-black);
+}
+
+:deep(
+    .tl-timemarker
+      .tl-timemarker-content-container
+      .tl-timemarker-content
+      .tl-timemarker-text
+      h2.tl-headline,
+    .tl-timemarker
+      .tl-timemarker-content-container
+      .tl-timemarker-content
+      .tl-timemarker-text
+      h2.tl-headline
+      p
+  ) {
+  color: var(--color-text);
+}
+
+:deep(
+    .tl-timeaxis
+      .tl-timeaxis-content-container
+      .tl-timeaxis-minor
+      .tl-timeaxis-tick
+  ) {
+  color: var(--color-text);
+}
+
+:deep(
+    .tl-timemarker
+      .tl-timemarker-content-container
+      .tl-timemarker-content
+      .tl-timemarker-media-container
+      [class^="tl-icon-"],
+    .tl-timemarker
+      .tl-timemarker-content-container
+      .tl-timemarker-content
+      .tl-timemarker-media-container
+      [class*=" tl-icon-"]
+  ) {
+  color: var(--color-text);
+}
 </style>
